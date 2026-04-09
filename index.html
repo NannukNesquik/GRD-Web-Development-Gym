@@ -5,138 +5,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/style.css">
 </head>
 
 <body>
-    <div class="bg-dark-subtle">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="Icons/logo-bertu.svg" alt="Bertu" width="80"
+                    height="80"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#"><h1>MEMBERSHIPS</h1></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Memberships</a>
+                        <a class="nav-link active" aria-current="page" href="#"><h1>CLASSES</h1></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Classes</a>
+                        <a class="nav-link active" aria-current="page" href="#"><h1>PT</h1></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pt-ov.html">PT</a>
+                        <a class="nav-link active" aria-current="page" href="#"><h1>PRODUCTS</h1></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="products-all.html">Products</a>
+                        <a class="nav-link active" aria-current="page" href="#"><h1>LOCATIONS</h1></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="locations.html">Locations</a>
+                        <a class="nav-link active" aria-current="page" href="#"><h1>CONTACT</h1></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link active" aria-current="page" href="#"><h1>ABOUT</h1></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-2 mb-lg-0">
+                    <li>
+                        <a class="navbar-brand" href="index.html"><img src="Icons/cart-shopping-solid-full.svg"
+                                alt="Bertu" width="40" height="40">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navbar-brand" href="index.html"><img src="Icons/circle-user-solid-full.svg"
+                                alt="Bertu" width="40" height="40">
+                        </a>
                     </li>
                 </ul>
             </div>
-        </nav>
-        <main>
-            <!--Hero Section-->
-            <div class="container">
+        </div>
+    </nav>
+    <!--Navbar End-->
+
+    <main style="background-color: #161715;">
+        <!--Hero Section-->
+        <div class="container-fluid background-img">
+            <div class="container background-image">
                 <h1>
                     6 Months Free Gym
                 </h1>
-                <a href="https://youthfitness.gov.mt/">Apply Now</a>
+                <button><a href="https://youthfitness.gov.mt/">Apply Now</a></button>
             </div>
+        </div>
 
-            <!--CTA Cards-->
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card">
-                            <img src="..." class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Women's Gym</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card">
-                            <img src="..." class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Boxing Studio</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
+        <!--CTA Cards-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="Images/womensgym.jpg" class="card-img h-300" alt="women's gym">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Women's Gym</h5>
+                            <p class="card-text">A private training space for women focused on strength, confidence, and
+                                comfort.</p>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="Images/boxingstudio.jpg" class="card-img h-300" alt="boxing studio">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Boxing Studio</h5>
+                            <p class="card-text">Train like a fighter with coached boxing sessions for all levels.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <!--Memberships Section-->
-            <div class="container">
-                <h1>Bertu's Memberships</h1>
-                <h2>Singles</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim cumque culpa quaerat? Recusandae,
-                    cupiditate fuga maxime deleniti veritatis unde! Praesentium cumque sit ratione rem velit aut eum ut
-                    atque modi.</p>
-                <h2>Couples</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim cumque culpa quaerat? Recusandae,
-                    cupiditate fuga maxime deleniti veritatis unde! Praesentium cumque sit ratione rem velit aut eum ut
-                    atque modi.</p>
-                <h2>Senior/Youth</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim cumque culpa quaerat? Recusandae,
-                    cupiditate fuga maxime deleniti veritatis unde! Praesentium cumque sit ratione rem velit aut eum ut
-                    atque modi.</p>
-            </div>
-        </main>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        <h3>General</h3>
-                    </div>
-                    <div class="col-4">
-                        <h3>Services</h3>
-                    </div>
-                    <div class="col-4">
-                        <h3>Opening Hours</h3>
-                    </div>
+        <!--Memberships Section-->
+        <div class="container">
+            <h1>Bertu's Memberships</h1>
+            <h2>Singles</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim cumque culpa quaerat? Recusandae,
+                cupiditate fuga maxime deleniti veritatis unde! Praesentium cumque sit ratione rem velit aut eum ut
+                atque modi.</p>
+            <h2>Couples</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim cumque culpa quaerat? Recusandae,
+                cupiditate fuga maxime deleniti veritatis unde! Praesentium cumque sit ratione rem velit aut eum ut
+                atque modi.</p>
+            <h2>Senior/Youth</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim cumque culpa quaerat? Recusandae,
+                cupiditate fuga maxime deleniti veritatis unde! Praesentium cumque sit ratione rem velit aut eum ut
+                atque modi.</p>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h3>General</h3>
                 </div>
-                <div class="row">
-                    <div class="col-4">
-                        <p>Address</p>
-                        <p>Email</p>
-                        <p>Telephone</p>
-                        <p>Icons</p>
-                    </div>
-                    <div class="col-4">
-                        <a href="#">Memberships</a>
-                        <a href="#">Classes</a>
-                        <a href="#">Personal Trainers</a>
-                        <a href="#">Products</a>
-                    </div>
-                    <div class="col-4">
-                        <p>Monday</p>
-                        <p>Tuesday</p>
-                        <p>Wednesday</p>
-                        <p>Thursday</p>
-                        <p>Friday</p>
-                        <p>Saturday</p>
-                        <p>Sunday</p>
-                    </div>
+                <div class="col-4">
+                    <h3>Services</h3>
                 </div>
-                <div class="row">
-                    <div class="col-4"><a href="#">Send Feedback</a></div>
-                    <div class="col-4"><a href="rules-safety.html">Rules & Safety</a></div>
-                    <div class="col-4"><a href="#">Login</a></div>
+                <div class="col-4">
+                    <h3>Opening Hours</h3>
                 </div>
             </div>
-        </footer>
+            <div class="row">
+                <div class="col-4">
+                    <p>Address</p>
+                    <p>Email</p>
+                    <p>Telephone</p>
+                    <p>Icons</p>
+                </div>
+                <div class="col-4">
+                    <a href="#">Memberships</a>
+                    <a href="#">Classes</a>
+                    <a href="#">Personal Trainers</a>
+                    <a href="#">Products</a>
+                </div>
+                <div class="col-4">
+                    <p>Monday</p>
+                    <p>Tuesday</p>
+                    <p>Wednesday</p>
+                    <p>Thursday</p>
+                    <p>Friday</p>
+                    <p>Saturday</p>
+                    <p>Sunday</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4"><a href="#">Send Feedback</a></div>
+                <div class="col-4"><a href="rules-safety.html">Rules & Safety</a></div>
+                <div class="col-4"><a href="#">Login</a></div>
+            </div>
+        </div>
+    </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+
+    <!--Javascript-->
+    <script src="Script/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation bar */
+.nav-bg-color{
+    background-color: #16171555;
+}
+
+.h-300{
+    height: 300px;
+    width: 400;
+    object-fit: cover;
+}
+
+.background-img{
+    background-imgae: url("Images/heropagenobg");
+}
+
+h1{
+    font-size: 20px;
+}
