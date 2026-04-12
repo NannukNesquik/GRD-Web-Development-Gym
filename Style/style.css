@@ -1,23 +1,107 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-/* navigation bar */
-.nav-bg-color{
-    background-color: #16171555;
+/* main */
+main{
+    background-color: #161715;
 }
 
-.h-300{
+p{
+    color: white;
+    font-size: 24px;
+}
+
+h1{
+    color: white;
+    font-family: 'bebas neue';
+}
+
+h2{
+    color: white;
+    font-size: 64px;
+}
+
+/* buttons */
+.button-reg {
+    background-color: #A5F502;
+    padding: 16px 20px;
+    border-radius: 50px;
+}
+.button-reg:hover{
+    background-color: #1D2A0E;
+    padding: 16px 20px;
+    border-radius: 50px;
+    border: 3px solid #A5F502;
+}
+.button-text {
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #161715;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.button-text:hover{
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #A5F502;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* navigation bar */
+.nav-bg-opacity {
+    background-color: #16171555;
+    background-image: linear-gradient(rgb(22, 23, 21), rgba(0, 0, 0, 0));
+    z-index: 99;
+}
+.nav-head {
+    font-size: 36px;
+    font-family: 'Bebas Neue';
+    color: white;
+}
+.nav-head:hover {
+    color: #8ACE00;
+}
+
+.homepage-card{
     height: 300px;
     width: 400;
     object-fit: cover;
 }
-
-.background-img{
-    background-imgae: url("Images/heropagenobg");
+.card{
+    border: none;
+}
+.card-title{
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 2px 10px #161715;
 }
 
-h1{
-    font-size: 20px;
+.card-text{
+    text-shadow: 0px 2px 10px #161715;
+}
+
+/* Heropage */
+.hero-page {
+    padding-top: 160px;
+    padding-bottom: 140px;
+}
+.hero-page h1 {
+    font-size: 200px;
+    font-family: 'Bebas Neue';
+    color: white;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+.hero-image {
+    position: absolute;
+    transform: scaleX(-1);
+    left: 850px;
+    top: 0px;
+}
+.hero-image img{
+    overflow: hidden;
 }

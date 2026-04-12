@@ -7,89 +7,121 @@
     <title>HOME</title>
     <link rel="stylesheet" href="Style/bootstrap.min.css">
     <link rel="stylesheet" href="Style/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
 </head>
 
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="Icons/logo-bertu.svg" alt="Bertu" width="80"
-                    height="80"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg nav-bg-opacity">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- Navbar logo -->
+            <a class="navbar-brand" href="index.html"><img src="Icons/logo-bertu.svg" alt="Bertu" width="100"
+                    height="100"></a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
             </button>
+
+            <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><h1>MEMBERSHIPS</h1></a>
+                <!-- center links -->
+                <ul class="navbar-nav mx-auto p-2 me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <h1 class="nav-head">MEMBERSHIPS</h1>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><h1>CLASSES</h1></a>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <h1 class="nav-head">CLASSES</h1>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><h1>PT</h1></a>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <h1 class="nav-head">PT</h1>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><h1>PRODUCTS</h1></a>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <h1 class="nav-head">PRODUCTS</h1>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><h1>LOCATIONS</h1></a>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <h1 class="nav-head">LOCATIONS</h1>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><h1>CONTACT</h1></a>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <h1 class="nav-head">CONTACT</h1>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><h1>ABOUT</h1></a>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <h1 class="nav-head">ABOUT</h1>
+                        </a>
                     </li>
                 </ul>
+                <!-- right icons -->
                 <ul class="navbar-nav me-2 mb-lg-0">
                     <li>
                         <a class="navbar-brand" href="index.html"><img src="Icons/cart-shopping-solid-full.svg"
-                                alt="Bertu" width="40" height="40">
+                                alt="Bertu" width="50" height="50">
                         </a>
                     </li>
                     <li>
                         <a class="navbar-brand" href="index.html"><img src="Icons/circle-user-solid-full.svg"
-                                alt="Bertu" width="40" height="40">
+                                alt="Bertu" width="50" height="50">
                         </a>
                     </li>
                 </ul>
             </div>
+            <!-- Collapsible wrapper -->
         </div>
+        <!-- Container wrapper -->
     </nav>
-    <!--Navbar End-->
+    <!-- Navbar End -->
 
     <main style="background-color: #161715;">
         <!--Hero Section-->
-        <div class="container-fluid background-img">
-            <div class="container background-image">
-                <h1>
-                    6 Months Free Gym
-                </h1>
-                <button><a href="https://youthfitness.gov.mt/">Apply Now</a></button>
+        <div class="container-fluid hero-page">
+            <!-- <div class="hero-image"><img src="Images/heropagenobg.png" alt=""></div> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h1>
+                            6 MONTHS <span style="color: #8ACE00;">FREE</span> GYM
+                        </h1>
+                    </div>
+                </div>
+                <button class="button-reg"><a href="https://youthfitness.gov.mt/" class="button-text">Apply
+                        Now</a></button>
             </div>
         </div>
+        <!--Hero Section End-->
 
         <!--CTA Cards-->
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card">
-                        <img src="Images/womensgym.jpg" class="card-img h-300" alt="women's gym">
+                        <img src="Images/womensgym.jpg" class="card-img homepage-card" alt="women's gym">
                         <div class="card-img-overlay">
-                            <h5 class="card-title">Women's Gym</h5>
+                            <h2 class="card-title">Women's Gym</h2>
                             <p class="card-text">A private training space for women focused on strength, confidence, and
                                 comfort.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 offset-md-1">
                     <div class="card">
-                        <img src="Images/boxingstudio.jpg" class="card-img h-300" alt="boxing studio">
+                        <img src="Images/boxingstudio.jpg" class="card-img homepage-card" alt="boxing studio">
                         <div class="card-img-overlay">
-                            <h5 class="card-title">Boxing Studio</h5>
+                            <h2 class="card-title">Boxing Studio</h2>
                             <p class="card-text">Train like a fighter with coached boxing sessions for all levels.</p>
                         </div>
                     </div>
@@ -98,66 +130,23 @@
         </div>
 
         <!--Memberships Section-->
-        <div class="container">
-            <h1>Bertu's Memberships</h1>
+        <div class="container text-center">
+            <h2 style="color: #8ACE00;">Bertu's Memberships</h2>
+
             <h2>Singles</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim cumque culpa quaerat? Recusandae,
-                cupiditate fuga maxime deleniti veritatis unde! Praesentium cumque sit ratione rem velit aut eum ut
-                atque modi.</p>
+            <p>Available to any individual aged 17 and over.
+                This membership is intended for one person only and cannot be shared or transferred.</p>
             <h2>Couples</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim cumque culpa quaerat? Recusandae,
-                cupiditate fuga maxime deleniti veritatis unde! Praesentium cumque sit ratione rem velit aut eum ut
-                atque modi.</p>
+            <p>Available to two individuals registering together.
+                Members must sign up at the same time and maintain the membership jointly for the selected duration.</p>
             <h2>Senior/Youth</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim cumque culpa quaerat? Recusandae,
-                cupiditate fuga maxime deleniti veritatis unde! Praesentium cumque sit ratione rem velit aut eum ut
-                atque modi.</p>
+            <p>Available to:
+                Youth: Individuals aged 17–22 (including those eligible for government gym schemes)
+                Seniors: Individuals aged 60 and over.
+                <span style="font-weight: bold;">Valid ID</span> may be required to confirm eligibility.</p>
         </div>
+        <!--Memberships Section End-->
     </main>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <h3>General</h3>
-                </div>
-                <div class="col-4">
-                    <h3>Services</h3>
-                </div>
-                <div class="col-4">
-                    <h3>Opening Hours</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <p>Address</p>
-                    <p>Email</p>
-                    <p>Telephone</p>
-                    <p>Icons</p>
-                </div>
-                <div class="col-4">
-                    <a href="#">Memberships</a>
-                    <a href="#">Classes</a>
-                    <a href="#">Personal Trainers</a>
-                    <a href="#">Products</a>
-                </div>
-                <div class="col-4">
-                    <p>Monday</p>
-                    <p>Tuesday</p>
-                    <p>Wednesday</p>
-                    <p>Thursday</p>
-                    <p>Friday</p>
-                    <p>Saturday</p>
-                    <p>Sunday</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4"><a href="#">Send Feedback</a></div>
-                <div class="col-4"><a href="rules-safety.html">Rules & Safety</a></div>
-                <div class="col-4"><a href="#">Login</a></div>
-            </div>
-        </div>
-    </footer>
-    </div>
 
     <!--Javascript-->
     <script src="Script/bootstrap.bundle.min.js"></script>
