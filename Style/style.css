@@ -11,6 +11,7 @@ body{
 p{
     color: white;
     font-size: 24px;
+    font-family: 'roboto';
 }
 
 h1{
@@ -21,16 +22,20 @@ h1{
 h2{
     color: white;
     font-size: 64px;
+    font-family: 'oswald';
+    font-weight: bold;
 }
 
 h3{
     color: white;
     font-size: 24px;
+    font-family: 'roboto';
 }
 
 /* buttons */
 .button-reg {
     background-color: #A5F502;
+    border: 3px solid #A5F502;
     padding: 16px 20px;
     border-radius: 50px;
     box-shadow: 0px 4px 4px #00000085;
@@ -73,5 +78,5 @@ h3{
     color: #8ACE00;
 }
 
-/* Products All */
+
 

@@ -1,3 +1,4 @@
+/* Products All */
 .notselected-cat{
     background-color: #8ACE00;
     padding-top: 26px;
@@ -50,11 +51,48 @@
     height: 400px;
     object-fit: cover;
     box-shadow: 0px 4px 4px #00000085;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .product-button{
     background-color: white;
     padding: 12px 16px;
     border-radius: 50px;
+    box-shadow: 0px 4px 4px #00000085;
 }
+
+.product-button:hover{
+    background-color: #A5F502;
+    padding: 12px 16px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px #00000085;
+}
+
+.category-title{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.category-title h2{
+    color: #8ACE00;
+}
+
+.category-title a{
+    text-decoration: none;
+    color: white;
+}
+
+.category-title h3:hover{
+    text-decoration: none;
+    color: #8ACE00;
+}
+
+.cat-image img{
+    height: 600px;
+}
+
+.card{
+    border: none;
+}
+
+

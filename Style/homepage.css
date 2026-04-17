@@ -1,38 +1,9 @@
-.button-membership {
-    background-color: #A5F502;
-    padding: 8px 32px;
-    border-radius: 50px;
-    box-shadow: 0px 4px 4px #00000085;
-}
-.button-membership:hover{
-    background-color: #1D2A0E;
-    padding: 8px 32px;
-    border-radius: 50px;
-    border: 3px solid #A5F502;
-    box-shadow: 0px 4px 4px #00000085;
-}
-.homepage-card{
-    height: 300px;
-    object-fit: cover;
-    box-shadow: 0px 4px 4px #00000085;
-}
-.card{
-    border: none;
-}
-.card-title{
-    color: white;
-    font-weight: bold;
-    text-shadow: 0px 2px 10px #000000;
-}
-.card-text{
-    text-shadow: 0px 2px 10px #000000;
-}
-
 /* Heropage */
 .hero-page {
     padding-top: 160px;
     padding-bottom: 140px;
 }
+
 .hero-page h1 {
     font-size: 200px;
     font-family: 'Bebas Neue';
@@ -40,36 +11,92 @@
     line-height: 1;
     margin-bottom: 40px;
 }
+
+.hero-image-box{
+    position: relative;
+}
+
 .hero-image {
     position: absolute;
     transform: scaleX(-1);
-    left: 850px;
     top: 0px;
-}
-.hero-image img{
+    left: 0px;
+    width: 100%;
+    z-index: 98;
     overflow: hidden;
 }
 
+.hero-image img{
+    height: 800px;
+    margin-left: -280px;
+}
+
+.button-membership {
+    background-color: #A5F502;
+    border: 3px solid #A5F502;
+    padding: 8px 32px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px #00000085;
+}
+
+.button-membership:hover {
+    background-color: #1D2A0E;
+    padding: 8px 32px;
+    border-radius: 50px;
+    border: 3px solid #A5F502;
+    box-shadow: 0px 4px 4px #00000085;
+}
+
+
+.homepage-card {
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px #00000085;
+}
+
+.card {
+    border: none; 
+    margin-top: 100px;
+}
+
+.card-title {
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 2px 10px #000000;
+}
+
+.card-text {
+    text-shadow: 0px 2px 10px #000000;
+}
+
 /* Memberships */
-.memberships{
+.memberships {
     padding-top: 24px;
     padding-bottom: 24px;
     margin-bottom: 140px;
 }
-.memberships-colour-1{
+
+.memberships-colour-1 {
     background-color: #1D2A0E;
 }
-.memberships-colour-2{
+
+.memberships-colour-2 {
     background-color: #16210A;
 }
-.mem-date{
+
+.mem-date {
     font-size: 24px;
     font-weight: medium;
     margin-bottom: -2px;
 }
-.mem-price{
+
+.mem-price {
     font-size: 64px;
     font-weight: bold;
     margin-bottom: 12px;
 }
 
+.carousel-item {
+    padding: 0px 180px 0px 180px;
+    height: 300px;
+}
