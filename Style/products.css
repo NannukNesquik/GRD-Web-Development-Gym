@@ -43,7 +43,7 @@
     padding-bottom: 140px;
 }
 
-.products-top5 p{
+.products-top3 p{
     margin-bottom: 4px;
 }
 
@@ -142,4 +142,17 @@
 
 .carousel-control-prev{
     justify-content: flex-start !important;
+}
+
+.allproducts-title h1{
+    font-size: 200px;
+}
+
+.page-margins{
+    padding-top: 160px;
+    padding-bottom: 140px;
+}
+
+.products-margin{
+    margin-bottom: 80px;
 }

@@ -85,5 +85,18 @@ hr{
     margin-top: 0px;
 }
 
+.target {
+    display: none;
+    padding-top: 140px;
+}
+
+.target:target {
+    display: block;
+}
+
+.form-gym{
+    padding: 8px 12px;
+    margin-bottom: 20px;
+}
 
 

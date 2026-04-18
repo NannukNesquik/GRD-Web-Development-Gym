@@ -1,0 +1,14 @@
+.page-margins{
+    padding-top: 160px;
+    padding-bottom: 140px;
+}
+
+.contact-title h1{
+    font-size: 200px;
+    color: #8ACE00;
+}
+
+.form-message{
+    padding: 8px 12px 200px 12px;
+    margin-bottom: 40px;
+}
