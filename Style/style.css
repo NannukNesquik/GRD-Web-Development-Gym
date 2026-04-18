@@ -78,5 +78,12 @@ h3{
     color: #8ACE00;
 }
 
+hr{
+    height: 80px; 
+    width: 100%; 
+    background-color: #89ce00; 
+    margin-top: 0px;
+}
+
 
 
