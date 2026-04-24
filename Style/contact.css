@@ -1,5 +1,5 @@
 .page-margins{
-    padding-top: 160px;
+    padding-top: 140px;
     padding-bottom: 140px;
 }
 
@@ -11,4 +11,19 @@
 .form-message{
     padding: 8px 12px 200px 12px;
     margin-bottom: 40px;
+    font-size: 24px;
+    font-family: 'roboto';
+}
+
+.contact-arrow{
+    rotate: -135deg;
+    height: 180px;
+}
+
+.contact-info p{
+    margin-bottom: 8px;
+}
+
+.contact-icons{
+    margin-top: 8px;
 }

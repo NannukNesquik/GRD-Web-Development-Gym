@@ -6,12 +6,14 @@
 /* main */
 body{
     background-color: #161715;
+    overflow-x: hidden;
 }
 
 p{
     color: white;
     font-size: 24px;
     font-family: 'roboto';
+    line-height: 1.3;
 }
 
 h1{
@@ -97,6 +99,11 @@ hr{
 .form-gym{
     padding: 8px 12px;
     margin-bottom: 20px;
+    font-size: 24px;
+    font-family: 'roboto';
 }
 
+.green-subtitle{
+    color: #8ACE00;
+}
 

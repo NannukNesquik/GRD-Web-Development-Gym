@@ -7,53 +7,140 @@
     <title>LOCATION</title>
     <link rel="stylesheet" href="Style/bootstrap.min.css">
     <link rel="stylesheet" href="Style/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link rel="stylesheet" href="Style/locations.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <h2>ADDRESS</h2>
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg nav-bg-opacity">
+            <!-- Container wrapper -->
+            <div class="container">
+                <!-- Navbar logo -->
+                <a class="navbar-brand" href="index.html"><img src="Icons/logo-bertu.svg" alt="Bertu" width="100"
+                        height="100"></a>
+
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- center links -->
+                    <ul class="navbar-nav mx-auto p-2 me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <h1 class="nav-head">MEMBERSHIPS</h1>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <h1 class="nav-head">CLASSES</h1>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <h1 class="nav-head">PT</h1>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="products-merch.html">
+                                <h1 class="nav-head">PRODUCTS</h1>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="locations.html">
+                                <h1 class="nav-head">LOCATIONS</h1>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="contact.html">
+                                <h1 class="nav-head">CONTACT</h1>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <h1 class="nav-head">ABOUT</h1>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- right icons -->
+                    <ul class="navbar-nav me-2 mb-lg-0">
+                        <li>
+                            <a class="navbar-brand" href="index.html"><img src="Icons/cart-shopping-solid-full.svg"
+                                    alt="Bertu" width="50" height="50">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navbar-brand" href="index.html"><img src="Icons/circle-user-solid-full.svg"
+                                    alt="Bertu" width="50" height="50">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-6">
-                    <h2>OPENING HOURS</h2>
-                </div>
+                <!-- Collapsible wrapper -->
             </div>
-            <div class="row">
-                <div class="col-6">
-                    <p>39 Triq Excelsior, Ħal Għargħur</p>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar End -->
+
+        <div class="container-fluid locationbgimage">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 title-margin">
+                        <h2>ADDRESS</h2>
+                    </div>
+                    <div class="col-6 text-end title-margin">
+                        <h2>OPENING HOURS</h2>
+                    </div>
                 </div>
-                <div class="col-6">
-                    <p>Mon-Fri: 7am-9pm</p>
-                    <p>Sat: 7am-4pm</p>
-                    <p>Sun: 7am-12pm</p>
+                <div class="row">
+                    <div class="col-6">
+                        <p>39 Triq Excelsior, Ħal Għargħur</p>
+                    </div>
+                    <div class="col-6 text-end info-margin">
+                        <p>Mon-Fri: 7am-9pm</p>
+                        <p>Sat: 7am-4pm</p>
+                        <p>Sun: 7am-12pm</p>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <h2>PHONE</h2>
+                <div class="row">
+                    <div class="col text-end title-margin-bottom">
+                        <h2>PHONE</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p>+356 2141 3406</p>
+                <div class="row">
+                    <div class="col text-end">
+                        <p>+356 2141 3406</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-3"><img src="Images/bertu_4.jpg" alt="gym inside"></div>
-                <div class="col-9 offset-md-3"><img src="Images/2_bertu_3.jpg" alt="gym inside"></div>
-            </div>
-            <div class="row">
-                <div class="col-9"><img src="Images/bertusgym.jpg" alt="gym inside with bertu"></div>
-                <div class="col-3"><img src="Images/boxingstudio.jpg" alt="boxing studio"></div>
+        <div class="container py-5 gym-gallery-section">
+            <div class="row g-4 gym-gallery">
+                <div class="col-md-4">
+                    <img src="Images/bertusgym-1.jpg" class="img-fluid w-100 gallery-img" alt="gym inside">
+                </div>
+                <div class="col-md-8">
+                    <img src="Images/bertusgym-2.jpg" class="img-fluid w-100 gallery-img" alt="gym inside">
+                </div>
+                <div class="col-md-8">
+                    <img src="Images/bertusgym-3.jpg" class="img-fluid w-100 gallery-img"
+                        alt="gym inside with bertu">
+                </div>
+                <div class="col-md-4">
+                    <img src="Images/bertusgym-4.png" class="img-fluid w-100 gallery-img" alt="boxing studio">
+                </div>
             </div>
         </div>
-        <div class="container">
-            <h2>GET THERE</h2>
+        <div class="container google-location">
+            <h2 class="text-center">GET THERE</h2>
             <div class="row">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d807.7499830679291!2d14.451964328451528!3d35.92250168431677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e4feb178bd16f%3A0x278819a24ec70f19!2sBertu&#39;s%20Gym!5e0!3m2!1sen!2smt!4v1774970462359!5m2!1sen!2smt"

@@ -54,7 +54,7 @@
                         </a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link active" aria-current="page" href="#">
+                        <a class="nav-link active" aria-current="page" href="locations.html">
                             <h1 class="nav-head">LOCATIONS</h1>
                         </a>
                     </li>
@@ -64,7 +64,7 @@
                         </a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link active" aria-current="page" href="#">
+                        <a class="nav-link active" aria-current="page" href="about-us.html">
                             <h1 class="nav-head">ABOUT</h1>
                         </a>
                     </li>
@@ -72,7 +72,7 @@
                 <!-- right icons -->
                 <ul class="navbar-nav me-2 mb-lg-0">
                     <li>
-                        <a class="navbar-brand" href="index.html"><img src="Icons/cart-shopping-solid-full.svg"
+                        <a class="navbar-brand" href="checkout.html"><img src="Icons/cart-shopping-solid-full.svg"
                                 alt="Bertu" width="50" height="50">
                         </a>
                     </li>
@@ -101,47 +101,74 @@
                         </h1>
                     </div>
                 </div>
-                <button class="button-reg"><a href="https://youthfitness.gov.mt/" class="button-text">Apply
-                        Now</a></button>
+            </div>
+            <div class="container">
+                <button class="button-reg">
+                    <a href="https://youthfitness.gov.mt/" class="button-text">Apply
+                        Now</a>
+                </button>
+            </div>
+
+            <!-- Diagonal banners -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 banner-layer">
+                <div class="diagonal-banner banner-1 text-center">
+                    <p>FREE FOR ELIGIBLE MEMBERS • MALTA GOVERNMENT SCHEME • APPLY NOW •
+                        FREE FOR ELIGIBLE MEMBERS • MALTA GOVERNMENT SCHEME • APPLY NOW •</p>
+                </div>
+
+                <div class="diagonal-banner banner-2 text-center">
+                    <p>FREE FOR ELIGIBLE MEMBERS • MALTA GOVERNMENT SCHEME • APPLY NOW •
+                        FREE FOR ELIGIBLE MEMBERS • MALTA GOVERNMENT SCHEME • APPLY NOW •</p>
+                </div>
             </div>
         </div>
         <!--Hero Section End-->
 
         <!--CTA Cards-->
-        <div class="container">
+        <div class="container cta-cards-section">
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
-                        <img src="Images/womensgym.jpg" class="card-img homepage-card" alt="women's gym">
-                        <div class="card-img-overlay">
-                            <h2 class="card-title">Women's Gym</h2>
-                            <p class="card-text">A private training space for women focused on strength, confidence, and
-                                comfort.</p>
+                    <a href="#memberships" class="cta-card-link">
+                        <div class="card cta-card">
+                            <img src="Images/womensgym.jpg" class="card-img homepage-card" alt="women's gym">
+                            <div class="card-img-overlay cta-overlay">
+                                <div class="cta-arrow"></div>
+                                <h2 class="cta-title">Women’s Gym</h2>
+                                <p class="cta-text">A private training space for women focused on strength, confidence,
+                                    and comfort.</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 offset-md-1">
-                    <div class="card">
-                        <img src="Images/boxingstudio.jpg" class="card-img homepage-card" alt="boxing studio">
-                        <div class="card-img-overlay">
-                            <h2 class="card-title">Boxing Studio</h2>
-                            <p class="card-text">Train like a fighter with coached boxing sessions for all levels.</p>
+                    <a href="#memberships" class="cta-card-link">
+                        <div class="card cta-card">
+                            <img src="Images/boxingstudio.jpg" class="card-img homepage-card" alt="boxing studio">
+                            <div class="card-img-overlay cta-overlay">
+                                <div class="cta-arrow"></div>
+                                <h2 class="cta-title">Boxing Studio</h2>
+                                <p class="cta-text">Train like a fighter with coached boxing sessions for all levels.
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
 
         <!--Memberships Section-->
-        <div class="container text-center">
-            <h2 style="color: #8ACE00; margin-bottom: 80px; margin-top: 240px;">Bertu's Memberships</h2>
+        <div class="container text-center membership-subtitles" id="memberships">
+            <h2 class="green-subtitle">Bertu's Memberships</h2>
 
-            <h2 style="margin-bottom: 26px;">Singles</h2>
-            <p style="margin-bottom: 40px;">Available to any individual aged 17 and over.
-                This membership is intended for one person only and cannot be shared or transferred.</p>
+            <div class="container-fluid">
+                <h2>Singles</h2>
+                <p>Available to any individual aged 17 and over.
+                    This membership is intended for one person only and cannot be shared or transferred.</p>
+
+            </div>
             <div class="container">
                 <div class="row text-center">
-                    <div class="col memberships memberships-colour-1">
+                    <div class="col memberships memberships-colour-1-left">
                         <div class="row">
                             <div class="col-12"></div>
                             <h3 class="mem-date">1 Day</h3>
@@ -197,7 +224,7 @@
                                         class="button-text">Buy</a></button></div>
                         </div>
                     </div>
-                    <div class="col memberships memberships-colour-1">
+                    <div class="col memberships memberships-colour-1-right">
                         <div class="row">
                             <div class="col-12"></div>
                             <h3 class="mem-date">1 Year</h3>
@@ -213,12 +240,15 @@
                     </div>
                 </div>
             </div>
-            <h2 style="margin-bottom: 26px;">Couples</h2>
-            <p style="margin-bottom: 40px;">Available to two individuals registering together.
-                Members must sign up at the same time and maintain the membership jointly for the selected duration.</p>
+            <div class="container-fluid membership-titles">
+                <h2>Couples</h2>
+                <p>Available to two individuals registering together.
+                    Members must sign up at the same time and maintain the membership jointly for the selected duration.
+                </p>
+            </div>
             <div class="container">
                 <div class="row text-center">
-                    <div class="col memberships memberships-colour-1">
+                    <div class="col memberships memberships-colour-1-left">
                         <div class="row">
                             <div class="col-12"></div>
                             <h3 class="mem-date">1 Day</h3>
@@ -274,7 +304,7 @@
                                         class="button-text">Buy</a></button></div>
                         </div>
                     </div>
-                    <div class="col memberships memberships-colour-1">
+                    <div class="col memberships memberships-colour-1-right">
                         <div class="row">
                             <div class="col-12"></div>
                             <h3 class="mem-date">1 Year</h3>
@@ -290,15 +320,17 @@
                     </div>
                 </div>
             </div>
-            <h2 style="margin-bottom: 26px;">Senior/Youth</h2>
-            <p style="margin-bottom: 40px;">Available to:
-                Youth: Individuals aged 17–22 (including those eligible for government gym schemes)
-                Seniors: Individuals aged 60 and over.
-                <span style="font-weight: bold;">Valid ID</span> may be required to confirm eligibility.
-            </p>
+            <div class="container-fluid membership-titles">
+                <h2>Senior/Youth</h2>
+                <p>Available to:
+                    Youth: Individuals aged 17–22 (including those eligible for government gym schemes)
+                    Seniors: Individuals aged 60 and over.
+                    <span style="font-weight: bold;">Valid ID</span> may be required to confirm eligibility.
+                </p>
+            </div>
             <div class="container">
                 <div class="row text-center">
-                    <div class="col memberships memberships-colour-1">
+                    <div class="col memberships memberships-colour-1-left">
                         <div class="row">
                             <div class="col-12"></div>
                             <h3 class="mem-date">1 Day</h3>
@@ -343,7 +375,7 @@
                     <div class="col memberships memberships-colour-2">
                         <div class="row">
                             <div class="col-12"></div>
-                            <h3 class="mem-date" 3>6 Months</h3>
+                            <h3 class="mem-date">6 Months</h3>
                         </div>
                         <div class="row">
                             <div class="col-12"></div>
@@ -354,7 +386,7 @@
                                         class="button-text">Buy</a></button></div>
                         </div>
                     </div>
-                    <div class="col memberships memberships-colour-1">
+                    <div class="col memberships memberships-colour-1-right">
                         <div class="row">
                             <div class="col-12"></div>
                             <h3 class="mem-date">1 Year</h3>
