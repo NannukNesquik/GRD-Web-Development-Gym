@@ -1,0 +1,14 @@
+.page-title h1{
+    font-size: 200px;
+}
+
+.background-strip{
+    background-color: #8ACE00;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 25px;
+    
+}
+.background-strip h3{
+    color: #161715;
+}

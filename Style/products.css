@@ -61,6 +61,13 @@
     box-shadow: 0px 4px 4px #00000085;
 }
 
+.product-button img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    filter: brightness(0);
+}
+
 .product-button:hover{
     background-color: #A5F502;
     padding: 12px 16px;

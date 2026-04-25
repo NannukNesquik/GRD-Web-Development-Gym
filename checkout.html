@@ -91,18 +91,89 @@
 
     <main>
         <div class="container">
-            <form action="/action_page.php">
-                <h3>COUPON CODE</h3>
-                <div class="row">
+            <div class="row">
+                <div class="col-6 page-title">
+                    <h1>BASKET</h1>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col">
-                    <input type="text" class="form-control form-gym" placeholder="Enter Code" aria-label="Enter Code">
+                    <div class="position-relative m-4">
+                        <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100" style="height: 1px;">
+                            <div class="progress-bar" style="width: 50%"></div>
+                        </div>
+                        <button type="button"
+                            class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill"
+                            style="width: 2rem; height:2rem;">1</button>
+                        <button type="button"
+                            class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill"
+                            style="width: 2rem; height:2rem;">2</button>
+                        <button type="button"
+                            class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill"
+                            style="width: 2rem; height:2rem;">3</button>
+                    </div>
                 </div>
-                <div class="col">
-                    <button type="submit" class="button-reg button-text">Send Message</button>
+            </div>
+            <br>
+            <div class="row gx-5">
+                <div class="col-8">
+                    <div class="row background-strip">
+                        <div class="col">
+                            <h3>ITEMS</h3>
+                        </div>
+                        <div class="col">
+                            <h3>QUANTITY</h3>
+                        </div>
+                        <div class="col">
+                            <h3>PRICE</h3>
+                        </div>
+                        <div class="col">
+                            <h3>DELETE</h3>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-4">
+                    <div class="row background-strip">
+                        <div class="col">
+                            <h3>YOUR BASKET</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h3>SUBTOTAL</h3>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <form action="/action_page.php">
+                                <h3>COUPON CODE</h3>
+                                <div class="row">
+                                    <div class="col-7">
+                                        <input type="text" class="form-control form-gym" placeholder="Enter Code"
+                                            aria-label="Enter Code">
+                                    </div>
+                                    <div class="col-5">
+                                        <button type="submit" class="button-reg button-text">Get Code</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col"><h3>Total</h3></div>
+                        <div class="col"></div>
+                    </div>
+
+                    <div class="row"><div class="col align-self-center"><button type="submit" class="button-reg button-text">Proceed to Checkout</button></div></div>
+
                 </div>
+            </div>
+
         </div>
-        </form>
+
         </div>
 
     </main>
