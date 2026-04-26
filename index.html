@@ -33,7 +33,7 @@
                 <!-- center links -->
                 <ul class="navbar-nav mx-auto p-2 me-auto mb-2 mb-lg-0">
                     <li class="nav-item mx-3">
-                        <a class="nav-link active" aria-current="page" href="#">
+                        <a class="nav-link active" aria-current="page" href="#memberships">
                             <h1 class="nav-head">MEMBERSHIPS</h1>
                         </a>
                     </li>
@@ -43,7 +43,7 @@
                         </a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link active" aria-current="page" href="#">
+                        <a class="nav-link active" aria-current="page" href="pt-ov.html">
                             <h1 class="nav-head">PT</h1>
                         </a>
                     </li>
@@ -76,7 +76,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="navbar-brand" href="index.html"><img src="Icons/circle-user-solid-full.svg"
+                        <a class="navbar-brand" href="login.html"><img src="Icons/circle-user-solid-full.svg"
                                 alt="Bertu" width="50" height="50">
                         </a>
                     </li>
@@ -133,7 +133,8 @@
                             <div class="card-img-overlay membership-cta-overlay">
                                 <div class="cta-arrow"></div>
                                 <h2 class="membership-cta-title">Women’s Gym</h2>
-                                <p class="membership-cta-text">A private training space for women focused on strength, confidence,
+                                <p class="membership-cta-text">A private training space for women focused on strength,
+                                    confidence,
                                     and comfort.</p>
                             </div>
                         </div>
@@ -146,7 +147,8 @@
                             <div class="card-img-overlay membership-cta-overlay">
                                 <div class="cta-arrow"></div>
                                 <h2 class="membership-cta-title">Boxing Studio</h2>
-                                <p class="membership-cta-text">Train like a fighter with coached boxing sessions for all levels.
+                                <p class="membership-cta-text">Train like a fighter with coached boxing sessions for all
+                                    levels.
                                 </p>
                             </div>
                         </div>
@@ -411,7 +413,7 @@
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel"
                         style="margin-bottom: 140px; margin-top: 180px;">
                         <div class="carousel-inner">
-                            <div class="membership-carousel-item active">
+                            <div class="carousel-item active feedback">
                                 <div class="row">
                                     <div class="col-4">
                                         <h3>Mark Camilleri</h3>
@@ -449,7 +451,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="membership-carousel-item">
+                            <div class="carousel-item feedback">
                                 <div class="row">
                                     <div class="col-4">
                                         <h3>Yousaf Khan</h3>
@@ -476,7 +478,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="membership-carousel-item">
+                            <div class="carousel-item feedback">
                                 <div class="row">
                                     <div class="col-4">
                                         <h3>Kristian Mintoff</h3>
@@ -521,53 +523,93 @@
     </main>
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <h3>General</h3>
-                </div>
-                <div class="col-4">
-                    <h3>Services</h3>
-                </div>
-                <div class="col-4">
-                    <h3>Opening Hours</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <p>39 Triq Excelsior, Ħal Għargħur</p>
-                    <p>bertusgym@gmail.com</p>
-                    <p>+356 2141 3406</p>
-                    <div class="row">
-                        <div class="col-1 icons">
-                            <img src="Icons/instagram-brands-solid-full.svg" alt="instagram url" width="50" height="50">
-                        </div>
-                        <div class="col-1 icons">
-                            <img src="Icons/square-facebook-brands-solid-full.svg" alt="facebook url" width="50" height="50">
-                        </div>
+        <div class="container-fluid footer-items">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <h2>General</h2>
+                    </div>
+                    <div class="col-4">
+                        <h2>Services</h2>
+                    </div>
+                    <div class="col-4">
+                        <h2>Opening Hours</h2>
                     </div>
                 </div>
-                <div class="col-4">
-                    <a href="#">Memberships</a>
-                    <a href="#">Classes</a>
-                    <a href="#">Personal Trainers</a>
-                    <a href="#">Products</a>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="locations.html">
+                            <p>39 Triq Excelsior, Ħal Għargħur</p>
+                        </a>
+                        <a href="contact.html"><p>bertusgym@gmail.com</p></a>
+                        <a href="contact.html"><p>+356 2141 3406</p></a>
+                        <div class="row">
+                            <div class="col-1 icons">
+                                <img src="Icons/instagram-brands-solid-full.svg" alt="instagram url" width="50"
+                                    height="50">
+                            </div>
+                            <div class="col-1 icons">
+                                <img src="Icons/square-facebook-brands-solid-full.svg" alt="facebook url" width="50"
+                                    height="50">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col"><a href="#memberships">
+                                    <p>Memberships</p>
+                                </a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><a href="#">
+                                    <p>Classes</p>
+                                </a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><a href="#">
+                                    <p>Personal Trainers</p>
+                                </a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><a href="products-merch.html">
+                                    <p>Products</p>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <p>Monday: 7am-9pm</p>
+                        <p>Tuesday: 7am-9pm</p>
+                        <p>Wednesday: 7am-9pm</p>
+                        <p>Thursday: 7am-9pm</p>
+                        <p>Friday: 7am-9pm</p>
+                        <p>Saturday: 7am-4pm</p>
+                        <p>Sunday: 7am-12pm</p>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <p>Monday</p>
-                    <p>Tuesday</p>
-                    <p>Wednesday</p>
-                    <p>Thursday</p>
-                    <p>Friday</p>
-                    <p>Saturday</p>
-                    <p>Sunday</p>
+                <div class="row align-items-center footer-bottom-row">
+                    <div class="col-4"><button class="send-feedback-button"><a href="contact.html">
+                                <h3>SEND FEEDBACK</h3>
+                            </a></button></div>
+                    <div class="col-4">
+                        <div class="row justify-content-start">
+                            <div class="col"><a href="rules-safety.html">
+                                    <h3>RULES & SAFETY</h3>
+                                </a></div>
+                            <div class="col"><img src="Icons/arrow-down-solid-full-green.svg" alt="navigation arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col"><a href="login.html">
+                                    <h3>LOGIN</h3>
+                                </a></div>
+                            <div class="col"><img src="Icons/arrow-down-solid-full-green.svg" alt="navigation arrow">
+                            </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-4"><a href="#">Send Feedback</a></div>
-                <div class="col-4"><a href="rules-safety.html">Rules & Safety</a></div>
-                <div class="col-4"><a href="#">Login</a></div>
-            </div>
+        </div>
         </div>
     </footer>
 

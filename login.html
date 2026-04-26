@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="Style/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg nav-bg-opacity">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- Navbar logo -->
+            <a class="navbar-brand" href="index.html"><img src="Icons/logo-bertu.svg" alt="Bertu" width="100"
+                    height="100"></a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- center links -->
+                <ul class="navbar-nav mx-auto p-2 me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <h1 class="nav-head">MEMBERSHIPS</h1>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <h1 class="nav-head">CLASSES</h1>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <h1 class="nav-head">PT</h1>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="products-merch.html">
+                            <h1 class="nav-head">PRODUCTS</h1>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="locations.html">
+                            <h1 class="nav-head">LOCATIONS</h1>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="contact.html">
+                            <h1 class="nav-head">CONTACT</h1>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="about-us.html">
+                            <h1 class="nav-head">ABOUT</h1>
+                        </a>
+                    </li>
+                </ul>
+                <!-- right icons -->
+                <ul class="navbar-nav me-2 mb-lg-0">
+                    <li>
+                        <a class="navbar-brand" href="checkout.html"><img src="Icons/cart-shopping-solid-full.svg"
+                                alt="Bertu" width="50" height="50">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navbar-brand" href="index.html"><img src="Icons/circle-user-solid-full.svg"
+                                alt="Bertu" width="50" height="50">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar End -->
+
+    <main>
+        <div class="container">
+            <div class="row justify-content-center log-in">
+                <div class="col-lg-4 col-md-12 col-sm-12 mx-5">
+                    <h2 class="text-center">Log-in</h2>
+                    <form action="profile.html">
+                        <div class="row">
+                            <div class="col">
+                                <h3>E-mail/Phone Number</h3>
+                                <input type="text" class="form-control form-gym" placeholder="Enter E-mail or Phone Number"
+                                    aria-label="E-mail" id="user-login" name="user-login" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h3>Password</h3>
+                                <input type="text" class="form-control form-gym" placeholder="Enter Password"
+                                    aria-label="Password" id="password-login" name="password-login" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button type="submit" class="button-reg button-text">Log-in</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-1 col-md-12 col-sm-12"></div>
+                <div class="col-lg-4 col-md-12 col-sm-12 mx-5">
+                    <h2 class="text-center">Register</h2>
+                    <form action="profile.html">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Name</h3><input type="text" class="form-control form-gym" placeholder="Enter Name"
+                                    aria-label="First" id="name" name="name" required>
+                            </div>
+                            <div class="col">
+                                <h3>Surname</h3> <input type="text" class="form-control form-gym"
+                                    placeholder="Enter Surname" aria-label="Last" id="Surname" name="Surname" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h3>Phone Number</h3>
+                                <input type="text" class="form-control form-gym" placeholder="Enter Phone Number"
+                                    aria-label="Number" id="number" name="number" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h3>E-mail</h3>
+                                <input type="text" class="form-control form-gym" placeholder="Enter E-mail"
+                                    aria-label="E-mail" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h3>Password</h3>
+                                <input type="text" class="form-control form-gym" placeholder="Enter Password"
+                                    aria-label="Password" id="password" name="password" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h3>Re-type Password</h3>
+                                <input type="text" class="form-control form-gym" placeholder="Re-enter Password"
+                                    aria-label="Re-type Password" id="password-retype" name="password-retype" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button type="submit" class="button-reg button-text">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid footer-items">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <h2>General</h2>
+                    </div>
+                    <div class="col-4">
+                        <h2>Services</h2>
+                    </div>
+                    <div class="col-4">
+                        <h2>Opening Hours</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="locations.html">
+                            <p>39 Triq Excelsior, Ħal Għargħur</p>
+                        </a>
+                        <a href="contact.html">
+                            <p>bertusgym@gmail.com</p>
+                        </a>
+                        <a href="contact.html">
+                            <p>+356 2141 3406</p>
+                        </a>
+                        <div class="row">
+                            <div class="col-1 icons">
+                                <img src="Icons/instagram-brands-solid-full.svg" alt="instagram url" width="50"
+                                    height="50">
+                            </div>
+                            <div class="col-1 icons">
+                                <img src="Icons/square-facebook-brands-solid-full.svg" alt="facebook url" width="50"
+                                    height="50">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col"><a href="index.html">
+                                    <p>Memberships</p>
+                                </a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><a href="#">
+                                    <p>Classes</p>
+                                </a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><a href="#">
+                                    <p>Personal Trainers</p>
+                                </a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><a href="products-merch.html">
+                                    <p>Products</p>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <p>Monday: 7am-9pm</p>
+                        <p>Tuesday: 7am-9pm</p>
+                        <p>Wednesday: 7am-9pm</p>
+                        <p>Thursday: 7am-9pm</p>
+                        <p>Friday: 7am-9pm</p>
+                        <p>Saturday: 7am-4pm</p>
+                        <p>Sunday: 7am-12pm</p>
+                    </div>
+                </div>
+                <div class="row align-items-center footer-bottom-row">
+                    <div class="col-4"><button class="send-feedback-button"><a href="contact.html">
+                                <h3>SEND FEEDBACK</h3>
+                            </a></button></div>
+                    <div class="col-4">
+                        <div class="row justify-content-start">
+                            <div class="col"><a href="rules-safety.html">
+                                    <h3>RULES & SAFETY</h3>
+                                </a></div>
+                            <div class="col"><img src="Icons/arrow-down-solid-full-green.svg" alt="navigation arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col"><a href="rules-safety.html">
+                                    <h3>LOGIN</h3>
+                                </a></div>
+                            <div class="col"><img src="Icons/arrow-down-solid-full-green.svg" alt="navigation arrow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Javascript-->
+    <script src="Script/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

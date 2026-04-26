@@ -1,5 +1,5 @@
 
-/* herosection */
+/* location */
 .locationbgimage {
     background-image: url('../Images/bertusfrontsign.jpg');
     background-repeat: no-repeat;
@@ -7,19 +7,20 @@
     background-position: -600px;
     height: 100vh;
     box-shadow: inset 0 0 0 1000px #1617156a;
+    border-bottom: 8px solid #8ACE00;
 }
 
-.title-margin{
+.loc-title-margin{
     margin-top: 280px;
     margin-bottom: 8px;
 }
 
-.title-margin-bottom{
+.loc-title-margin-bottom{
     margin-bottom: 8px;
     margin-top: 40px;
 }
 
-.info-margin p{
+.loc-info-margin p{
     margin-bottom: 8px;
 }
 /* herosection */
