@@ -1,8 +1,6 @@
 /* Products All */
 .notselected-cat{
     background-color: #8ACE00;
-    padding-top: 26px;
-    padding-bottom: 26px;
     margin-bottom: 40px;
 }
 .notselected-cat a{
@@ -13,12 +11,12 @@
     color: #161715;
     font-weight: bold;
     font-size: 64px;
+    padding-top: 26px;
+    padding-bottom: 26px;
 }
 
 .selected-cat{
     background-color: #A5F502;
-    padding-top: 26px;
-    padding-bottom: 26px;
     margin-bottom: 40px;
 }
 .selected-cat a{
@@ -29,6 +27,8 @@
     color: #161715;
     font-weight: bold;
     font-size: 64px;
+    padding-top: 26px;
+    padding-bottom: 26px;
 }
 
 .cat-hover:hover{
@@ -123,23 +123,23 @@
 
 .carousel-arrowleft-bras{
     position: absolute;
-    top: 1170px;
+    top: 1182px;
     left: 1270px;
 }
 .carousel-arrowright-bras{
     position: absolute;
-    top: 1170px;
+    top: 1182px;
     right: -85px;
 }
 
 .carousel-arrowleft-equip{
     position: absolute;
-    top: 1910px;
+    top: 1932px;
     left: 1270px;
 }
 .carousel-arrowright-equip{
     position: absolute;
-    top: 1910px;
+    top: 1932px;
     right: -85px;
 }
 

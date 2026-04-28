@@ -4,47 +4,496 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PERSONAL TRAINER | </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>PERSONAL TRAINERS</title>
+    <link rel="stylesheet" href="Style/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <main>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg nav-bg-opacity">
+        <!-- Container wrapper -->
         <div class="container">
-            <div class="row">
-                <div class="col-6"><img src="" alt=""></div>
-                <div class="col-6">
-                    <div class="row">
+            <!-- Navbar logo -->
+            <a class="navbar-brand" href="index.html"><img src="Icons/logo-bertu.svg" alt="Bertu" width="100"
+                    height="100"></a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- center links -->
+                <ul class="navbar-nav mx-auto p-2 me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="index.html#memberships">
+                            <h1 class="nav-head">MEMBERSHIPS</h1>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="class.html">
+                            <h1 class="nav-head">CLASSES</h1>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="pt-ov.html">
+                            <h1 class="nav-head">PT</h1>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="products-merch.html">
+                            <h1 class="nav-head">PRODUCTS</h1>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="locations.html">
+                            <h1 class="nav-head">LOCATIONS</h1>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="contact.html">
+                            <h1 class="nav-head">CONTACT</h1>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="about-us.html">
+                            <h1 class="nav-head">ABOUT</h1>
+                        </a>
+                    </li>
+                </ul>
+                <!-- right icons -->
+                <ul class="navbar-nav me-2 mb-lg-0">
+                    <li>
+                        <a class="navbar-brand" href="checkout.html"><img src="Icons/cart-shopping-solid-full.svg"
+                                alt="Bertu" width="50" height="50">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navbar-brand" href="login.html"><img src="Icons/circle-user-solid-full.svg"
+                                alt="Bertu" width="50" height="50">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar End -->
+
+    <main>
+        <div class="container personal-trainers-page target" id="will">
+            <div class="row personal-trainer-focus">
+                <div class="col-lg-6 col-md-12 col-sm-12"><img src="Images/will-tennyson.jpg"
+                        class="personal-trainer-image" alt="will tennyson"></div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row personal-trainer-margins">
                         <div class="col">
-                            <h1>Name Surname</h1>
+                            <h1>Will Tennyson</h1>
                         </div>
                     </div>
-                    <div class="row">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sit, ut, cum voluptatum
-                            veniam harum autem enim illo vero cupiditate, odit eius. Possimus vel rem nam et, dolore
-                            voluptatum blanditiis?</p>
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <p>Will Tennyson is a fitness trainer dedicated to helping people build confidence and
+                                improve their overall fitness. With a focus on simple, effective training methods, he
+                                makes it easier for clients to stay consistent and see real progress.</p>
+                        </div>
                     </div>
-                    <div class="row">
-                        <h3>Subtitle</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit in placeat quia explicabo
-                            sequi et modi accusamus quisquam nesciunt nostrum voluptate autem odio, quasi adipisci illo
-                            impedit saepe ex ut!</p>
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <h3>Focus Area</h3>
+                            <p>Will specialises in general fitness, beginner-friendly training, and building sustainable
+                                routines. His approach focuses on consistency, proper form, and making fitness part of
+                                everyday life.</p>
+                        </div>
                     </div>
-                    <div class="row">
-                        <h3>Subtitle</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit in placeat quia explicabo
-                            sequi et modi accusamus quisquam nesciunt nostrum voluptate autem odio, quasi adipisci illo
-                            impedit saepe ex ut!</p>
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <h3>Contact</h3>
+                        </div>
                     </div>
-                    <div class="row">
-                        <p>icons</p>
+                    <div class="row personal-trainer-focus-icons">
+                        <div class="col-1">
+                            <img src="Icons/whatsapp-brands-solid-full.svg" alt="whatsapp">
+                        </div>
+                        <div class="col-11">
+                            <p>+356 7993 6142</p>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-focus-icons">
+                        <div class="col-1">
+                            <img src="Icons/instagram-brands-solid-full.svg" alt="instagram">
+                        </div>
+                        <div class="col-11">
+                            <a href="https://www.instagram.com/willtenny/">
+                                <p>@willtenny</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container personal-trainers-page target" id="matthew">
+            <div class="row personal-trainer-focus">
+                <div class="col-lg-6 col-md-12 col-sm-12"><img src="Images/matthew-xuereb.png"
+                        class="personal-trainer-image" alt="matthew xuereb"></div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <h1>Matthew Xuereb</h1>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <p>Matthew Xuereb is a dedicated fitness trainer focused on building strength, physique, and
+                                overall performance. With a strong presence in the gym, he brings an energetic and
+                                disciplined approach to every session.</p>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <h3>Focus Area</h3>
+                            <p>Matthew specialises in strength training, muscle development, and performance-based
+                                workouts. His training style focuses on proper form, progressive overload, and helping
+                                clients achieve visible, lasting results.</p>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <h3>Contact</h3>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-focus-icons">
+                        <div class="col-1">
+                            <img src="Icons/whatsapp-brands-solid-full.svg" alt="whatsapp">
+                        </div>
+                        <div class="col-11">
+                            <p>+356 7974 1823</p>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-focus-icons">
+                        <div class="col-1">
+                            <img src="Icons/instagram-brands-solid-full.svg" alt="instagram">
+                        </div>
+                        <div class="col-11">
+                            <a href="https://www.instagram.com/xuereb_matthew_pt/">
+                                <p>@xuereb_matthew_pt</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container personal-trainers-page target" id="martin">
+            <div class="row personal-trainer-focus">
+                <div class="col-lg-6 col-md-12 col-sm-12"><img src="Images/martin-fenech.png"
+                        class="personal-trainer-image" alt="Martin Fenech"></div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <h1>Martin Fenech</h1>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <p>Martin Fenech is a former boxer and experienced fitness professional, focused on helping
+                                individuals improve their strength, performance, and overall health. His background in
+                                boxing shapes a disciplined and practical approach to training.</p>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <h3>Focus Area</h3>
+                            <p>Martin specialises in boxing-based training, strength and conditioning, and building
+                                consistent fitness routines. His sessions focus on proper technique, endurance, and
+                                long-term progress.</p>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <h3>Contact</h3>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-focus-icons">
+                        <div class="col-1">
+                            <img src="Icons/whatsapp-brands-solid-full.svg" alt="whatsapp">
+                        </div>
+                        <div class="col-11">
+                            <p>+356 9912 7405</p>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-focus-icons">
+                        <div class="col-1">
+                            <img src="Icons/instagram-brands-solid-full.svg" alt="instagram">
+                        </div>
+                        <div class="col-11">
+                            <a href="https://www.instagram.com/martin.fenech.773/">
+                                <p>@martin.fenech.773</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container personal-trainers-page target" id="zvein">
+            <div class="row personal-trainer-focus">
+                <div class="col-lg-6 col-md-12 col-sm-12"><img src="Images/zvein-falzon.png"
+                        class="personal-trainer-image" alt="c"></div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <h1>Zvein Falzon</h1>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <p>Zvein Falzon is a physique-focused trainer dedicated to building muscle, strength, and
+                                elite-level conditioning. With a strong presence in the gym, he brings intensity and
+                                precision to every training session.</p>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <h3>Focus Area</h3>
+                            <p>Zvein specialises in bodybuilding, muscle growth, and high-intensity strength training.
+                                His approach focuses on strict form, progressive overload, and pushing clients to
+                                achieve maximum physical results.</p>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <h3>Contact</h3>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-focus-icons">
+                        <div class="col-1">
+                            <img src="Icons/whatsapp-brands-solid-full.svg" alt="whatsapp">
+                        </div>
+                        <div class="col-11">
+                            <p>+356 9986 2319</p>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-focus-icons">
+                        <div class="col-1">
+                            <img src="Icons/instagram-brands-solid-full.svg" alt="instagram">
+                        </div>
+                        <div class="col-11">
+                            <a href="https://www.instagram.com/genet1canomaly/">
+                                <p>@genet1canomaly</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container personal-trainers-page target" id="adam">
+            <div class="row personal-trainer-focus">
+                <div class="col-lg-6 col-md-12 col-sm-12"><img src="Images/adam-sullivan.png"
+                        class="personal-trainer-image" alt="Adam Sullivan"></div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <h1>Adam Sullivan</h1>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <p>Adam Sullivan is a fitness trainer focused on helping individuals build strength, improve
+                                fitness, and stay consistent with their training. He brings a balanced and approachable
+                                style suited for all experience levels.</p>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <h3>Focus Area</h3>
+                            <p>Adam specialises in general fitness, strength training, and functional workouts. His
+                                approach focuses on proper technique, sustainable progress, and building routines that
+                                clients can maintain long-term.</p>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <h3>Contact</h3>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-focus-icons">
+                        <div class="col-1">
+                            <img src="Icons/whatsapp-brands-solid-full.svg" alt="whatsapp">
+                        </div>
+                        <div class="col-11">
+                            <p>+356 7991 5638</p>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-focus-icons">
+                        <div class="col-1">
+                            <img src="Icons/instagram-brands-solid-full.svg" alt="instagram">
+                        </div>
+                        <div class="col-11">
+                            <a href="https://www.instagram.com/adam.sulli/">
+                                <p>@adam.sulli</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container personal-trainers-page target" id="scott">
+            <div class="row personal-trainer-focus">
+                <div class="col-lg-6 col-md-12 col-sm-12"><img src="Images/scott-schembri.png"
+                        class="personal-trainer-image" alt="scott schembri"></div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <h1>Scott Schembri</h1>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <p>Scott Schembri is a fitness trainer focused on helping clients improve their strength,
+                                fitness, and overall lifestyle. With a modern approach to training, he aims to make
+                                fitness both effective and sustainable.</p>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <h3>Focus Area</h3>
+                            <p>Scott specialises in functional training, strength development, and overall fitness. His
+                                approach focuses on building strong foundations, improving movement, and creating
+                                routines that fit into everyday life.</p>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-margins">
+                        <div class="col">
+                            <h3>Contact</h3>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-focus-icons">
+                        <div class="col-1">
+                            <img src="Icons/whatsapp-brands-solid-full.svg" alt="whatsapp">
+                        </div>
+                        <div class="col-11">
+                            <p>+356 7948 2751</p>
+                        </div>
+                    </div>
+                    <div class="row personal-trainer-focus-icons">
+                        <div class="col-1">
+                            <img src="Icons/instagram-brands-solid-full.svg" alt="instagram">
+                        </div>
+                        <div class="col-11">
+                            <a href="https://www.instagram.com/scott.schembri/">
+                                <p>@scott.schembri</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid footer-items">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <h2>General</h2>
+                    </div>
+                    <div class="col-4">
+                        <h2>Services</h2>
+                    </div>
+                    <div class="col-4">
+                        <h2>Opening Hours</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="locations.html">
+                            <p>39 Triq Excelsior, Ħal Għargħur</p>
+                        </a>
+                        <a href="contact.html">
+                            <p>bertusgym@gmail.com</p>
+                        </a>
+                        <a href="contact.html">
+                            <p>+356 2141 3406</p>
+                        </a>
+                        <div class="row">
+                            <div class="col-1 icons">
+                                <img src="Icons/instagram-brands-solid-full.svg" alt="instagram url" width="50"
+                                    height="50">
+                            </div>
+                            <div class="col-1 icons">
+                                <img src="Icons/square-facebook-brands-solid-full.svg" alt="facebook url" width="50"
+                                    height="50">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col"><a href="#memberships">
+                                    <p>Memberships</p>
+                                </a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><a href="#">
+                                    <p>Classes</p>
+                                </a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><a href="#">
+                                    <p>Personal Trainers</p>
+                                </a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><a href="products-merch.html">
+                                    <p>Products</p>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <p>Monday: 7am-9pm</p>
+                        <p>Tuesday: 7am-9pm</p>
+                        <p>Wednesday: 7am-9pm</p>
+                        <p>Thursday: 7am-9pm</p>
+                        <p>Friday: 7am-9pm</p>
+                        <p>Saturday: 7am-4pm</p>
+                        <p>Sunday: 7am-12pm</p>
+                    </div>
+                </div>
+                <div class="row align-items-center footer-bottom-row">
+                    <div class="col-4"><button class="send-feedback-button"><a href="contact.html">
+                                <h3>SEND FEEDBACK</h3>
+                            </a></button></div>
+                    <div class="col-4">
+                        <div class="row justify-content-start">
+                            <div class="col"><a href="rules-safety.html">
+                                    <h3>RULES & SAFETY</h3>
+                                </a></div>
+                            <div class="col"><img src="Icons/arrow-down-solid-full-green.svg" alt="navigation arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col"><a href="login.html">
+                                    <h3>LOGIN</h3>
+                                </a></div>
+                            <div class="col"><img src="Icons/arrow-down-solid-full-green.svg" alt="navigation arrow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer End-->
+
     <!--Javascript-->
     <script src="Script/bootstrap.js"></script>
 </body>
