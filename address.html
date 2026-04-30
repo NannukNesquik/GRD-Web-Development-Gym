@@ -91,142 +91,107 @@
 
     <main>
         <div class="container">
-            <div class="row">
-                <div class="col-6 page-title">
-                    <h1>BASKET</h1>
-                </div>
-            </div>
-            <div class="position-relative m-4">
-                <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="0" aria-valuemin="0"
-                    aria-valuemax="100" style="height: 3px;">
-                    <div class="progress-bar" style="width: 0%"></div>
-                </div>
-                <button type="button"
-                    class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-secondary rounded-pill"
-                    id="current-progress-btn" style="width: 2rem; height:2rem;">1</button>
-                <button type="button"
-                    class="position-absolute top-0 start-25 translate-middle btn btn-sm btn-secondary rounded-pill"
-                    style="width: 2rem; height:2rem;">2</button>
-                <button type="button"
-                    class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-secondary rounded-pill"
-                    style="width: 2rem; height:2rem;">3</button>
-                <button type="button"
-                    class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill"
-                    style="width: 2rem; height:2rem;">4</button>
-            </div>
-            <br>
-            <div class="row gx-5">
-                <div class="col-lg-8 col-md-12 col-sm-12">
-                    <div class="row background-strip align-items-center">
-                        <div class="col-5">
-                            <h3>ITEMS</h3>
-                        </div>
-                        <div class="col-3 text-center">
-                            <h3>QUANTITY</h3>
-                        </div>
-                        <div class="col-2 text-end">
-                            <h3>PRICE</h3>
-                        </div>
-                        <div class="col-2 text-center">
-                            <h3>DELETE</h3>
-                        </div>
-                    </div>
-                    <div class="row basket-item align-items-center">
-                        <div class="col-5 d-flex align-items-center gap-3">
-                            <img src="Images/sports-bra-3.avif" alt="sports bra">
-                            <p>PowerLift Zip Bra</p>
-                        </div>
-
-                        <div class="col-3 align-items-center">
-                            <div class="quantity-selector">
-                                <input type="number" class="qty-input" min="1" value="1" pattern="[0-9]*">
-                            </div>
-                        </div>
-
-                        <div class="col-2 text-center">
-                            <h3>€42</h3>
-                        </div>
-
-                        <div class="col-2 text-center">
-                            <button class="delete-btn">
-                                <img src="Icons/trash-solid-full.svg" alt="Delete">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="row basket-item align-items-center">
-                        <div class="col-5 d-flex align-items-center gap-3">
-                            <img src="Images/wheel-1.jpg" alt="ab roller">
-                            <p>CoreForm Ab Roller</p>
-                        </div>
-
-                        <div class="col-3 align-items-center">
-                            <div class="quantity-selector">
-                                <input type="number" class="qty-input" min="1" value="1" pattern="[0-9]*">
-                            </div>
-                        </div>
-
-                        <div class="col-2 text-center">
-                            <h3>€22</h3>
-                        </div>
-
-                        <div class="col-2 text-center">
-                            <button class="delete-btn">
-                                <img src="Icons/trash-solid-full.svg" alt="Delete">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="row basket-item align-items-center">
-                        <div class="col-5 d-flex align-items-center gap-3">
-                            <img src="Images/citru-1.jpg" alt="citruline">
-                            <p>Nitric Oxide Support</p>
-                        </div>
-
-                        <div class="col-3 align-items-center">
-                            <div class="quantity-selector">
-                                <input type="number" class="qty-input" min="1" value="1" pattern="[0-9]*">
-                            </div>
-                        </div>
-
-                        <div class="col-2 text-center">
-                            <h3>€26</h3>
-                        </div>
-
-                        <div class="col-2 text-center">
-                            <button class="delete-btn">
-                                <img src="Icons/trash-solid-full.svg" alt="Delete">
-                            </button>
-                        </div>
+            <form action="index.html">
+                <div class="row">
+                    <div class="col-6 page-title">
+                        <h1>ADDRESS</h1>
                     </div>
                 </div>
-
-
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="row background-strip">
-                        <div class="col-12">
-                            <h3>ORDER SUMMARY</h3>
+                <div class="position-relative m-4">
+                    <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100" style="height: 3px;">
+                        <div class="progress-bar" style="width: 33.33%"></div>
+                    </div>
+                    <button type="button"
+                        class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill"
+                        style="width: 2rem; height:2rem;">1</button>
+                    <button type="button"
+                        class="position-absolute top-0 start-25 translate-middle btn btn-sm btn-secondary rounded-pill"
+                        id="current-progress-btn" style="width: 2rem; height:2rem;">2</button>
+                    <button type="button"
+                        class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-secondary rounded-pill"
+                        style="width: 2rem; height:2rem;">3</button>
+                    <button type="button"
+                        class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill"
+                        style="width: 2rem; height:2rem;">4</button>
+                </div>
+                <br>
+                <div class="row gx-5">
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                        <div class="row background-strip align-items-center">
+                            <div class="col">
+                                <h3 style="color: #8ACE00; pointer-events: none;">hello</h3>
+                            </div>
+                        </div>
+                        <div class="row basket-form align-items-center">
+                            <div class="col-lg-6 col-md-6 col-sm-12" id="divPhone">
+                                <label for="Phone">Phone Number:</label>
+                                <input type="text" id="Phone" class="form-control form-gym" aria-label="Phone"
+                                    name="regPhoneNumber" placeholder="Enter Phone Number" required pattern="[0-9]{8}">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12" id="divEmail">
+                                <label for="Email">E-mail:</label>
+                                <input type="text" id="Email" class="form-control form-gym" name="regEmailAddress"
+                                    aria-label="E-mail" placeholder="Enter E-mail Address" required>
+                            </div>
+                        </div>
+                        <div class="row basket-form align-items-center">
+                            <div class="col-lg-6 col-md-6 col-sm-12" id="divBuilding">
+                                <label for="building">Building Name & Number:</label>
+                                <input type="text" id="building" class="form-control form-gym" aria-label="building name"
+                                    name="buildingName" placeholder="Enter Building Name & Number" required>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12" id="divStreet">
+                                <label for="street">Street Name:</label>
+                                <input type="text" id="street" class="form-control form-gym" name="streetName"
+                                    aria-label="street name" placeholder="Enter Street Name" required>
+                            </div>
+                        </div>
+                        <div class="row basket-form align-items-center">
+                            <div class="col-lg-6 col-md-6 col-sm-12" id="divCity">                   
+                                    <label for="city">Locality:</label>
+                                    <select name="cityName" id="city" class="form-gym" required>
+                                        <option value="" disabled selected>Select City</option>
+                                        <option value="1">Gharghur</option>
+                                        <option value="2">Naxxar</option>
+                                        <option value="3">Mosta</option>
+                                        <option value="4">San Gwann</option>
+                                    </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12" id="divPost">
+                                <label for="Post">Postal Code:</label>
+                                <input type="text" id="Post" class="form-control form-gym" name="PostCode"
+                                    aria-label="E-mail" placeholder="Enter Post Code" required>
+                            </div>
                         </div>
                     </div>
-                    <div class="row order-summary">
-                        <div class="col-12">
-                            <div class="row subtotal-price">
-                                <div class="col-10">
-                                    <h3 class="order-summary-title">SUBTOTAL</h3>
-                                </div>
-                                <div class="col-2">
-                                    <h3>€90</h3>
-                                </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="row background-strip">
+                            <div class="col-12">
+                                <h3>ORDER SUMMARY</h3>
                             </div>
-                            <form action="#">
-                                <h3>COUPON CODE</h3>
-                                <div class="row">
-                                    <div class="col-7">
-                                        <input type="text" class="form-control form-gym" placeholder="Enter Code"
-                                            aria-label="Enter Code">
+                        </div>
+                        <div class="row order-summary">
+                            <div class="col-12">
+                                <div class="row subtotal-price">
+                                    <div class="col-10">
+                                        <h3 class="order-summary-title">SUBTOTAL</h3>
                                     </div>
-                                    <div class="col-5">
-                                        <button type="submit" class="button-coupon">Get Code</button>
+                                    <div class="col-2">
+                                        <h3>€90</h3>
                                     </div>
                                 </div>
+                                <form action="#">
+                                    <h3>COUPON CODE</h3>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <input type="text" class="form-control form-gym" placeholder="Enter Code"
+                                                aria-label="Enter Code">
+                                        </div>
+                                        <div class="col-5">
+                                            <button type="submit" class="button-coupon">Get Code</button>
+                                        </div>
+                                    </div>
                                 </form>
                                 <div class="row total-price">
                                     <div class="col-10">
@@ -236,15 +201,13 @@
                                         <h3>€90</h3>
                                     </div>
                                 </div>
-                            <form action="address.html">
                                 <button type="submit" class="button-checkout"
-                                    style="margin: 0 auto; display: block;">Proceed
-                                    to Checkout</button>
-                            </form>
+                                    style="margin: 0 auto; display: block;">Pay Online</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </main>
     <!--Javascript-->

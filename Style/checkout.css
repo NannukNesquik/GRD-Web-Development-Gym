@@ -1,14 +1,114 @@
-.page-title h1{
-    font-size: 200px;
-}
-
 .background-strip{
     background-color: #8ACE00;
     border-radius: 15px;
     padding: 20px;
     padding-top: 25px;
-    
+    margin-bottom: 28px;
 }
+
 .background-strip h3{
     color: #161715;
 }
+
+.start-25{
+    left: 33.33% !important;
+}
+
+.start-50 {
+    left: 66.66% !important;
+}
+
+.btn-primary{
+    background-color: #8ACE00;
+    color: #8ACE00;
+    border: solid 2px #8ACE00;
+}
+
+.btn-secondary{
+    background-color: #1D2A0E;
+    color: #A5F502;
+    border: solid 2px #1D2A0E;
+}
+
+#current-progress-btn{
+    background-color: #1D2A0E;
+    color: #A5F502;
+    border: solid 2px #8ACE00;
+}
+
+.progress-bar{
+    background-color: #8ACE00;
+    --bs-progress-bg: var(--bs-secondary-bg);
+}
+
+.progress{
+    margin-bottom: 40px;
+}
+
+.page-title {
+    margin-top: 140px;
+}
+
+/* basket */
+.basket-item {
+    margin-bottom: 28px;
+}
+
+.basket-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.basket-item p {
+    font-size: 18px;
+}
+
+.basket-item h3 {
+    margin: 0;
+}
+
+/* delete button */
+.delete-btn {
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 13px;
+}
+
+.delete-btn img {
+    width: 26px;
+    height: 26px;
+    border-radius: 0;
+}
+
+/* input */
+.qty-input {
+    width: 50px;
+    text-align: center;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.order-summary{
+    margin-top: 28px;
+}
+
+.order-summary-title{
+    margin-bottom: 46px;
+}
+
+.order-summary input{
+    margin-bottom: 46px;
+}
+

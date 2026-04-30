@@ -94,26 +94,19 @@
                 <div class="col-lg-4 col-md-12 col-sm-12 mx-5">
                     <h2 class="text-center">Log-in</h2>
                     <form action="profile.html">
-                        <div class="row">
-                            <div class="col">
-                                <h3>E-mail/Phone Number</h3>
-                                <input type="text" class="form-control form-gym"
-                                    placeholder="Enter E-mail or Phone Number" aria-label="E-mail" id="user-login"
-                                    name="user-login" required>
-                            </div>
+                        <div id="divPhone">
+                            <label for="EmailOrPhone">E-mail/Phone Number:</label>
+                            <input type="text" id="EmailOrPhone" class="form-control form-gym" aria-label="EmailOrPhone"
+                                name="EmailOrPhoneNumber" placeholder="Enter E-mail or Phone Number" required>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <h3>Password</h3>
-                                <input type="text" class="form-control form-gym" placeholder="Enter Password"
-                                    aria-label="Password" id="password-login" name="password-login" required>
-                            </div>
+                        <div id="divPassword">
+                            <label for="Password">Password:</label>
+                            <input type="text" id="Password" class="form-control form-gym" name="AccPass"
+                                aria-label="Password" placeholder="Enter Password" required>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <button type="submit" class="button-reg button-text">Log-in</button>
-                            </div>
-                        </div>
+                        <button type="submit" id="button2" class="button-default">
+                            Log-in
+                        </button>
                     </form>
                 </div>
                 <div class="col-lg-1 col-md-12 col-sm-12"></div>
@@ -121,48 +114,40 @@
                     <h2 class="text-center">Register</h2>
                     <form action="profile.html">
                         <div class="row">
-                            <div class="col">
-                                <h3>Name</h3><input type="text" class="form-control form-gym" placeholder="Enter Name"
-                                    aria-label="First" id="name" name="name" required>
+                            <div class="col-lg-6 col-md-6 col-sm-12" id="divFirstName">
+                                <label for="regFirstName">First Name:</label>
+                                <input type="text" id="regFirstName" class="form-control form-gym" name="regName"
+                                    aria-label="name" placeholder="Joe" required>
                             </div>
-                            <div class="col">
-                                <h3>Surname</h3> <input type="text" class="form-control form-gym"
-                                    placeholder="Enter Surname" aria-label="Last" id="Surname" name="Surname" required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <h3>Phone Number</h3>
-                                <input type="text" class="form-control form-gym" placeholder="Enter Phone Number"
-                                    aria-label="Number" id="number" name="number" required>
+                            <div class="col-lg-6 col-md-6 col-sm-12" id="divLastName">
+                                <label for="regLastName">Last Name:</label>
+                                <input type="text" id="regLastName" class="form-control form-gym" name="regSurname"
+                                    aria-label="surname" placeholder="Borg" required>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <h3>E-mail</h3>
-                                <input type="text" class="form-control form-gym" placeholder="Enter E-mail"
-                                    aria-label="E-mail" id="email" name="email" required>
-                            </div>
+                        <div id="divPhone">
+                            <label for="regPhone">Phone Number:</label>
+                            <input type="text" id="regPhone" class="form-control form-gym" aria-label="Phone"
+                                name="regPhoneNumber" placeholder="99224466" required pattern="[0-9]{8}">
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <h3>Password</h3>
-                                <input type="text" class="form-control form-gym" placeholder="Enter Password"
-                                    aria-label="Password" id="password" name="password" required>
-                            </div>
+                        <div id="divEmail">
+                            <label for="regEmail">E-mail:</label>
+                            <input type="text" id="regEmail" class="form-control form-gym" name="regEmailAddress"
+                                aria-label="E-mail" placeholder="joeborg@gmail.com" required>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <h3>Re-type Password</h3>
-                                <input type="text" class="form-control form-gym" placeholder="Re-enter Password"
-                                    aria-label="Re-type Password" id="password-retype" name="password-retype" required>
-                            </div>
+                        <div id="divregPassword">
+                            <label for="regPassword">Password:</label>
+                            <input type="text" id="regPassword" class="form-control form-gym" name="RegAccPass"
+                                aria-label="Password" placeholder="Enter Password" required>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <button type="submit" class="button-reg button-text">Register</button>
-                            </div>
+                        <div id="divregRePassword">
+                            <label for="regRePassword">Re-Type Password:</label>
+                            <input type="text" id="regRePassword" class="form-control form-gym" name="RegReAccPass"
+                                aria-label="Re-type Password" placeholder="Re-Enter Password" required>
                         </div>
+                        <button type="submit" id="button2" class="button-default">
+                            Register
+                        </button>
                     </form>
                 </div>
             </div>
