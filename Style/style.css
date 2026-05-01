@@ -271,6 +271,26 @@ a {
     border-radius: 15px;
 }
 
+#divCredit input{
+    display: block;
+    margin-top: 5px;
+}
+
+#divExpiry input{
+    display: block;
+    margin-top: 5px;
+}
+
+#divCVC input{
+    display: block;
+    margin-top: 5px;
+}
+
+#divCreditName input{
+    display: block;
+    margin-top: 5px;
+}
+
 #divFirstName input {
     display: block;
     margin-top: 5px;
@@ -557,7 +577,6 @@ textarea {
 /* contact page ends */
 
 /* about us page */
-
 .about-us h1 {
     font-size: 200px;
 }
@@ -1045,6 +1064,6 @@ input {
     border-radius: 15px;
 }
 
-.history-background .col-4{
+.history-background .col-4 {
     padding: 0px;
 }
