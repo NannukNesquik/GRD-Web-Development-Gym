@@ -91,28 +91,68 @@
     <main>
         <div class="container-fluid">
             <div class="row profile-margins">
+                <!--need to add media query to turn into hambruger when small screen-->
                 <div class="col-3 profile-categories-column">
                     <a href="profile.html" class="profile-categories">DASHBOARD</a>
-                    <a href="orders.html" class="profile-categories" id="profile-selected">ORDERS</a>
-                    <a href="sessions.html" class="profile-categories">SESSION PUNCH IN</a>
+                    <a href="orders.html" class="profile-categories">ORDERS</a>
+                    <a href="sessions.html" class="profile-categories" id="profile-selected">SESSION PUNCH IN</a>
                     <a href="bookedclasses.html" class="profile-categories">CLASSES</a>
                     <a href="account.html" class="profile-categories">ACCOUNT DETAILS</a>
                     <a href="login.html" class="profile-categories">LOG-OUT</a>
                 </div>
-
-                <div class="col-9 ">
-                    <div class="row">
-                        <a href="orders.html"
-                            class="col-lg-6 col-md-6 col-sm-12 cat-selected d-flex align-items-center justify-content-center text-center">
-                            ORDERS
-                        </a>
-                        <a href="order-history.html"
-                            class=" col-lg-6 col-md-6 col-sm-12 cat-notselected d-flex align-items-center justify-content-center text-center">
-                            ORDER HISTORY
-                        </a>
-                    </div>
-                    <div class="row profile-content">
-                        <div class="col-6"></div>
+                <div class="col-9 profile-content">
+                    <div>
+                        <h2>SESSIONS</h2>
+                        <div class="row">
+                            <div class="col text-center">
+                                <h2 class="calendar-month">MARCH 2026</h2>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center text-center session-list">
+                            <div class="col-5 session">
+                                <div class="row">
+                                    <div class="col-3 session-date">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3 class="mem-price">9</h3>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3 class="mem-date">Mon</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-9 session-time text-end">
+                                        <h3>Punch in</h3>
+                                        <h3>12:00</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center text-center session-list">
+                            <div class="col-5 session">
+                                <div class="row">
+                                    <div class="col-3 session-date">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3 class="mem-price">16</h3>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3 class="mem-date">Mon</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-9 session-time text-end">
+                                        <h3>Punch in</h3>
+                                        <h3>15:03</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
