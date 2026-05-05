@@ -61,6 +61,11 @@ a {
     margin-top: 16px;
 }
 
+.page-margins {
+    padding-top: 160px;
+    padding-bottom: 140px;
+}
+
 /* main end */
 
 /* Footer */
@@ -216,12 +221,25 @@ a {
     z-index: 99;
 }
 
+.text-bg-dark {
+    background-color: #161715 !important;
+}
+
+.navbar-toggler {
+    background-color: #8ACE00;
+}
+
 .nav-head {
     font-size: 36px;
 }
 
 .nav-head:hover {
     color: #8ACE00;
+}
+
+.navbar-icons-right {
+    width: 50px;
+    height: 50px;
 }
 
 /* sub nav bar*/
@@ -462,7 +480,7 @@ textarea {
 
 .membership-cta-card {
     border: none;
-    border-radius: 16px;
+    border-radius: 15px;
     box-shadow: 0px 4px 4px #00000055;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -607,11 +625,12 @@ textarea {
 /* location */
 /* herosection end */
 .locationbgimage {
-    background-image: url('../Images/bertusfrontsign.jpg');
-    background-repeat: no-repeat;
+    background: linear-gradient(0deg, #16171564, #16171564), url('../Images/bertusfrontsign.jpg');
+    background-size: cover;
     background-size: 170%;
-    background-position: -600px;
     height: 100vh;
+    background-repeat: no-repeat;
+    background-position: -600px;
     border-bottom: 8px solid #8ACE00;
 }
 
@@ -641,6 +660,8 @@ textarea {
     object-fit: cover;
     display: block;
     border-radius: 15px;
+    filter: grayscale(100%);
+    box-shadow: 0px 4px 4px #00000085;
 }
 
 /* gym gallery end */
@@ -906,6 +927,8 @@ input {
     margin-bottom: 40px;
 }
 
+/*session punch in end */
+
 /* Products All */
 
 .products-top3 p {
@@ -971,67 +994,68 @@ input {
     border: none;
 }
 
-.carousel-margin {
+/* Products All End*/
+
+/* Products Carousel */
+.products-page .carousel-margin {
     margin-bottom: 40px;
 }
 
-.carousel-arrowleft-tops {
+.products-page .carousel-arrowleft-tops {
     position: absolute;
-    top: 70px;
+    top: 40px;
     left: 1270px;
 }
 
-.carousel-arrowright-tops {
+.products-page .carousel-arrowright-tops {
     position: absolute;
-    top: 70px;
+    top: 40px;
     right: -85px;
 }
 
-.carousel-arrowleft-bras {
+.products-page .carousel-arrowleft-bras {
     position: absolute;
-    top: 1182px;
+    top: 1165px;
     left: 1270px;
 }
 
-.carousel-arrowright-bras {
+.products-page .carousel-arrowright-bras {
     position: absolute;
-    top: 1182px;
+    top: 1165px;
     right: -85px;
 }
 
-.carousel-arrowleft-equip {
+.products-page .carousel-arrowleft-equip {
     position: absolute;
-    top: 1932px;
+    top: 1915px;
     left: 1270px;
 }
 
-.carousel-arrowright-equip {
+.products-page .carousel-arrowright-equip {
     position: absolute;
-    top: 1932px;
+    top: 1915px;
     right: -85px;
 }
 
-.carousel-control-next {
+.products-page .carousel-control-next {
     justify-content: flex-start !important;
 }
 
-.carousel-control-prev {
+.products-page .carousel-control-prev {
     justify-content: flex-start !important;
 }
 
+/* I couldnt manage to mske the carousel fully responsive */
 
 .allproducts-title h1 {
     font-size: 200px;
 }
 
-.page-margins {
-    padding-top: 160px;
-    padding-bottom: 140px;
-}
-
 .products-margin {
     margin-bottom: 80px;
 }
+
+/* Products Carousel End*/
 
 /* orders */
 .order-main-image img {
@@ -1092,7 +1116,8 @@ input {
 /* orders confirmation end */
 
 /* checkout */
-.background-strip, .background-strip-view-order {
+.background-strip,
+.background-strip-view-order {
     background-color: #8ACE00;
     border-radius: 15px;
     padding: 20px;
@@ -1100,7 +1125,8 @@ input {
     margin-bottom: 28px;
 }
 
-.background-strip h3, .background-strip-view-order h3 {
+.background-strip h3,
+.background-strip-view-order h3 {
     color: #161715;
 }
 
@@ -1218,10 +1244,99 @@ input {
     margin-bottom: 2px;
 }
 
-.view-order-section{
+.view-order-section {
     margin-top: 40px;
 }
 
-.background-strip-view-order{
+.background-strip-view-order {
     margin-bottom: 140px;
+}
+
+/* product focus */
+.product-line h3 {
+    font-size: 12px;
+}
+
+.product-focus-image img {
+    width: 98%;
+    height: 575px;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.product-focus-image {
+    position: relative;
+}
+
+.product-focus {
+    position: relative;
+}
+
+.product-stock img{
+    height: 28px;
+    width: 28px;
+    margin-right: 8px;
+}
+
+.product-stock{
+    margin-bottom: -8px;
+}
+
+.product-line{
+    margin-bottom: 16px;
+}
+
+.product-price-inclvat{
+    margin-bottom: 24px;
+}
+
+.suggested{
+    margin-top: 80px;
+}
+
+/* product focus end */
+
+@media screen and (max-width: 1369px) {
+    .hero-image {
+        opacity: 0;
+    }
+
+    .feedback {
+        height: 500px;
+    }
+}
+
+/* managed to make products carousel next arrow go in an alright position */
+
+@media screen and (max-width: 1069px) {
+    .products-page .carousel-arrowleft-tops {
+        top: 555px;
+        left: -4085px;
+    }
+
+    .products-page .carousel-arrowright-tops {
+        top: 555px;
+        right: 185px;
+    }
+
+    .products-page .carousel-arrowleft-bras {
+        top: 1165px;
+        left: 1270px;
+    }
+
+    .products-page .carousel-arrowright-bras {
+        top: 2490px;
+        right: 185px;
+    }
+
+    .products-page .carousel-arrowleft-equip {
+        top: 1915px;
+        left: 1270px;
+    }
+
+    .products-page .carousel-arrowright-equip {
+        top: 4285px;
+        right: 185px;
+    }
 }

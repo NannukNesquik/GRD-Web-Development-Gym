@@ -18,72 +18,72 @@
     <nav class="navbar fixed-top navbar-expand-lg nav-bg-opacity">
         <!-- Container wrapper -->
         <div class="container">
-            <!-- Navbar logo -->
             <a class="navbar-brand" href="index.html"><img src="Icons/logo-bertu.svg" alt="Bertu" width="100"
                     height="100"></a>
-
-            <!-- Toggle button -->
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                 aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
+                <span class="navbar-toggler-icon"></span>
             </button>
-
-            <!-- Collapsible wrapper -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- center links -->
-                <ul class="navbar-nav mx-auto p-2 me-auto mb-2 mb-lg-0">
-                    <li class="nav-item mx-3">
-                        <a class="nav-link active" aria-current="page" href="index.html#memberships">
-                            <h1 class="nav-head">MEMBERSHIPS</h1>
-                        </a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link active" aria-current="page" href="class.html">
-                            <h1 class="nav-head">CLASSES</h1>
-                        </a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link active" aria-current="page" href="pt-ov.html">
-                            <h1 class="nav-head">PT</h1>
-                        </a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link active" aria-current="page" href="products-merch.html">
-                            <h1 class="nav-head">PRODUCTS</h1>
-                        </a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link active" aria-current="page" href="locations.html">
-                            <h1 class="nav-head">LOCATIONS</h1>
-                        </a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link active" aria-current="page" href="contact.html">
-                            <h1 class="nav-head">CONTACT</h1>
-                        </a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link active" aria-current="page" href="about-us.html">
-                            <h1 class="nav-head">ABOUT</h1>
-                        </a>
-                    </li>
-                </ul>
-                <!-- right icons -->
-                <ul class="navbar-nav me-2 mb-lg-0">
-                    <li>
-                        <a class="navbar-brand" href="checkout.html"><img src="Icons/cart-shopping-solid-full.svg"
-                                alt="Bertu" width="50" height="50">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="navbar-brand" href="login.html"><img src="Icons/circle-user-solid-full.svg"
-                                alt="Bertu" width="50" height="50">
-                        </a>
-                    </li>
-                </ul>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto p-2 me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="index.html#memberships">
+                                <h1 class="nav-head">MEMBERSHIPS</h1>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="class.html">
+                                <h1 class="nav-head">CLASSES</h1>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="pt-ov.html">
+                                <h1 class="nav-head">PT</h1>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="products-merch.html">
+                                <h1 class="nav-head">PRODUCTS</h1>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="locations.html">
+                                <h1 class="nav-head">LOCATIONS</h1>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="contact.html">
+                                <h1 class="nav-head">CONTACT</h1>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="about-us.html">
+                                <h1 class="nav-head">ABOUT</h1>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- right icons -->
+                    <ul class="navbar-nav me-2 mb-lg-0 mt-2">
+                        <li>
+                            <a class="navbar-brand" href="checkout.html"><img src="Icons/cart-shopping-solid-full.svg"
+                                    alt="Bertu" class="navbar-icons-right">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navbar-brand" href="login.html"><img src="Icons/circle-user-solid-full.svg"
+                                    alt="Bertu" class="navbar-icons-right">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <!-- Collapsible wrapper -->
         </div>
         <!-- Container wrapper -->
     </nav>
@@ -101,7 +101,7 @@
                     <!--item 1-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/top-1.avif" class="card card-img-top product-card"
+                            <a href="products-focus.html"><img src="Images/top-1.avif" class="card card-img-top product-card"
                                     alt="gym top"></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -124,7 +124,7 @@
                     <!--item 2-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/top-2.avif" class="card card-img-top product-card"
+                            <a href="products-focus.html"><img src="Images/top-2.avif" class="card card-img-top product-card"
                                     alt="gym top"></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -147,7 +147,7 @@
                     <!--item 3-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/top-3.jpeg" class="card card-img-top product-card"
+                            <a href="products-focus.html"><img src="Images/top-3.jpeg" class="card card-img-top product-card"
                                     alt="gym top"></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -172,7 +172,7 @@
                     <!--item 4-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/top-4.webp" class="card card-img-top product-card"
+                            <a href="products-focus.html"><img src="Images/top-4.webp" class="card card-img-top product-card"
                                     alt="gym top"></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -195,7 +195,7 @@
                     <!--item 5-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/top-5.webp" class="card card-img-top product-card"
+                            <a href="products-focus.html"><img src="Images/top-5.webp" class="card card-img-top product-card"
                                     alt="gym top"></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -218,7 +218,7 @@
                     <!--item 6-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/top-6.avif" class="card card-img-top product-card"
+                            <a href="products-focus.html"><img src="Images/top-6.avif" class="card card-img-top product-card"
                                     alt="gym top"></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -243,7 +243,7 @@
                     <!--item 7-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/top-7.avif" class="card card-img-top product-card"
+                            <a href="products-focus.html"><img src="Images/top-7.avif" class="card card-img-top product-card"
                                     alt="gym top"></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -266,7 +266,7 @@
                     <!--item 8-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/top-8.webp" class="card card-img-top product-card"
+                            <a href="products-focus.html"><img src="Images/top-8.webp" class="card card-img-top product-card"
                                     alt="gym top"></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -289,7 +289,7 @@
                     <!--item 9-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/top-9.webp" class="card card-img-top product-card"
+                            <a href="products-focus.html"><img src="Images/top-9.webp" class="card card-img-top product-card"
                                     alt="gym top"></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -323,7 +323,7 @@
                     <!--item 1-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/sports-bra-1.webp" class="card card-img-top product-card"
+                            <a href="products-focus.html"><img src="Images/sports-bra-1.webp" class="card card-img-top product-card"
                                     alt="sports bra"></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -346,7 +346,7 @@
                     <!--item 2-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/sports-bra-2.webp" class="card card-img-top product-card"
+                            <a href="products-focus.html"><img src="Images/sports-bra-2.webp" class="card card-img-top product-card"
                                     alt="sports bra"></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -369,7 +369,7 @@
                     <!--item 3-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/sports-bra-3.avif" class="card card-img-top product-card"
+                            <a href="products-focus.html"><img src="Images/sports-bra-3.avif" class="card card-img-top product-card"
                                     alt=“sports bras“></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -394,7 +394,7 @@
                     <!--item 4-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/sports-bra-4.webp" class="card card-img-top product-card"
+                            <a href="products-focus.html"><img src="Images/sports-bra-4.webp" class="card card-img-top product-card"
                                     alt=“sports bras“></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -417,7 +417,7 @@
                     <!--item 5-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/sports-bra-5.jpg" class="card card-img-top product-card"
+                            <a href="products-focus.html"><img src="Images/sports-bra-5.jpg" class="card card-img-top product-card"
                                     alt=“sports bras“></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -440,7 +440,7 @@
                     <!--item 6-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/sports-bra-6.webp" class="card card-img-top product-card"
+                            <a href="products-focus.html"><img src="Images/sports-bra-6.webp" class="card card-img-top product-card"
                                     alt=“sports bras“></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -465,7 +465,7 @@
                     <!--item 7-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/sports-bra-7.webp" class="card card-img-top product-card"
+                            <a href="products-focus.html"><img src="Images/sports-bra-7.webp" class="card card-img-top product-card"
                                     alt=“sports bras“></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -488,7 +488,7 @@
                     <!--item 8-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/sports-bra-8.webp" class="card card-img-top product-card"
+                            <a href="products-focus.html"><img src="Images/sports-bra-8.webp" class="card card-img-top product-card"
                                     alt=“sports bras“></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -511,7 +511,7 @@
                     <!--item 9-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/sports-bra-9.webp" class="card card-img-top product-card"
+                            <a href="products-focus.html"><img src="Images/sports-bra-9.webp" class="card card-img-top product-card"
                                     alt=“sports bras“></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -545,7 +545,7 @@
                     <!--item 1-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/bag-1.avif" class="card card-img-top product-card" alt=“duffle bag pink”></a>
+                            <a href="products-focus.html"><img src="Images/bag-1.avif" class="card card-img-top product-card" alt=“duffle bag pink”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -567,7 +567,7 @@
                     <!--item 2-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/belt-1.webp" class="card card-img-top product-card" alt=“powerlifitng belt”></a>
+                            <a href="products-focus.html"><img src="Images/belt-1.webp" class="card card-img-top product-card" alt=“powerlifitng belt”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -589,7 +589,7 @@
                     <!--item 3-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/band-1.avif" class="card card-img-top product-card" alt=“resistance band”></a>
+                            <a href="products-focus.html"><img src="Images/band-1.avif" class="card card-img-top product-card" alt=“resistance band”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -613,7 +613,7 @@
                     <!--item 4-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/yogamat-1.jpg" class="card card-img-top product-card" alt=“yoga mat”></a>
+                            <a href="products-focus.html"><img src="Images/yogamat-1.jpg" class="card card-img-top product-card" alt=“yoga mat”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -635,7 +635,7 @@
                     <!--item 5-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/strap-1.jpg" class="card card-img-top product-card" alt=“lifting straps”></a>
+                            <a href="products-focus.html"><img src="Images/strap-1.jpg" class="card card-img-top product-card" alt=“lifting straps”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -657,7 +657,7 @@
                     <!--item 6-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/wheel-1.jpg" class="card card-img-top product-card" alt=“ab roller”></a>
+                            <a href="products-focus.html"><img src="Images/wheel-1.jpg" class="card card-img-top product-card" alt=“ab roller”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -681,7 +681,7 @@
                     <!--item 7-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/rope-1.jpg" class="card card-img-top product-card" alt=“jump rope”></a>
+                            <a href="products-focus.html"><img src="Images/rope-1.jpg" class="card card-img-top product-card" alt=“jump rope”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -703,7 +703,7 @@
                     <!--item 8-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/sweatband-1.jpg" class="card card-img-top product-card" alt=“sweatband”></a>
+                            <a href="products-focus.html"><img src="Images/sweatband-1.jpg" class="card card-img-top product-card" alt=“sweatband”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -725,7 +725,7 @@
                     <!--item 9-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/salts-1.webp" class="card card-img-top product-card" alt=“smelling salts”></a>
+                            <a href="products-focus.html"><img src="Images/salts-1.webp" class="card card-img-top product-card" alt=“smelling salts”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -759,7 +759,7 @@
                     <!--item 1-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/creatine.jpg" class="card card-img-top product-card" alt=“creatine”></a>
+                            <a href="products-focus.html"><img src="Images/creatine.jpg" class="card card-img-top product-card" alt=“creatine”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -781,7 +781,7 @@
                     <!--item 2-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/protein-1.avif" class="card card-img-top product-card" alt=“protein powder”></a>
+                            <a href="products-focus.html"><img src="Images/protein-1.avif" class="card card-img-top product-card" alt=“protein powder”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -803,7 +803,7 @@
                     <!--item 3-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/preworkout-1.jpg" class="card card-img-top product-card" alt=“pre workout”></a>
+                            <a href="products-focus.html"><img src="Images/preworkout-1.jpg" class="card card-img-top product-card" alt=“pre workout”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -827,7 +827,7 @@
                     <!--item 4-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/bcaa-1.jpg" class="card card-img-top product-card" alt=“BCAA”></a>
+                            <a href="products-focus.html"><img src="Images/bcaa-1.jpg" class="card card-img-top product-card" alt=“BCAA”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -849,7 +849,7 @@
                     <!--item 5-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/protein-2.jpg" class="card card-img-top product-card" alt=“protein powder”></a>
+                            <a href="products-focus.html"><img src="Images/protein-2.jpg" class="card card-img-top product-card" alt=“protein powder”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -871,7 +871,7 @@
                     <!--item 6-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/creatine-2.jpg" class="card card-img-top product-card" alt=“creatine”></a>
+                            <a href="products-focus.html"><img src="Images/creatine-2.jpg" class="card card-img-top product-card" alt=“creatine”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -895,7 +895,7 @@
                     <!--item 7-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/Preworkout-2.png" class="card card-img-top product-card" alt=“pre workout”></a>
+                            <a href="products-focus.html"><img src="Images/Preworkout-2.png" class="card card-img-top product-card" alt=“pre workout”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -917,7 +917,7 @@
                     <!--item 8-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/bcaa-2.jpg" class="card card-img-top product-card" alt=“BCAA”></a>
+                            <a href="products-focus.html"><img src="Images/bcaa-2.jpg" class="card card-img-top product-card" alt=“BCAA”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -939,7 +939,7 @@
                     <!--item 9-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/protein-3.webp" class="card card-img-top product-card" alt=“protein”></a>
+                            <a href="products-focus.html"><img src="Images/protein-3.webp" class="card card-img-top product-card" alt=“protein”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -972,7 +972,7 @@
                     <!--item 1-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/beta-1.webp" class="card card-img-top product-card" alt=“beta alanine”></a>
+                            <a href="products-focus.html"><img src="Images/beta-1.webp" class="card card-img-top product-card" alt=“beta alanine”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -994,7 +994,7 @@
                     <!--item 2-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/casein-1.jpg" class="card card-img-top product-card" alt=“casein”></a>
+                            <a href="products-focus.html"><img src="Images/casein-1.jpg" class="card card-img-top product-card" alt=“casein”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -1016,7 +1016,7 @@
                     <!--item 3-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/citru-1.jpg" class="card card-img-top product-card" alt=“citrulline”></a>
+                            <a href="products-focus.html"><img src="Images/citru-1.jpg" class="card card-img-top product-card" alt=“citrulline”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -1040,7 +1040,7 @@
                     <!--item 4-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/glycerol.webp" class="card card-img-top product-card" alt=“glycerol”></a>
+                            <a href="products-focus.html"><img src="Images/glycerol.webp" class="card card-img-top product-card" alt=“glycerol”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -1062,7 +1062,7 @@
                     <!--item 5-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/fishoil-1.jpg" class="card card-img-top product-card" alt=“fish oil”></a>
+                            <a href="products-focus.html"><img src="Images/fishoil-1.jpg" class="card card-img-top product-card" alt=“fish oil”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -1084,7 +1084,7 @@
                     <!--item 6-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/casein-2.webp" class="card card-img-top product-card" alt=“casein”></a>
+                            <a href="products-focus.html"><img src="Images/casein-2.webp" class="card card-img-top product-card" alt=“casein”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -1108,7 +1108,7 @@
                     <!--item 7-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/beta-2.webp" class="card card-img-top product-card" alt=“alanine”></a>
+                            <a href="products-focus.html"><img src="Images/beta-2.webp" class="card card-img-top product-card" alt=“alanine”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -1130,7 +1130,7 @@
                     <!--item 8-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/citru-2.jpeg" class="card card-img-top product-card" alt=“citrulline”></a>
+                            <a href="products-focus.html"><img src="Images/citru-2.jpeg" class="card card-img-top product-card" alt=“citrulline”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -1152,7 +1152,7 @@
                     <!--item 9-->
                     <div class="col-lg-4 col-md-8 col-sm-12 list-product">
                         <div class="item">
-                            <a href="#"><img src="Images/fishoil-2.webp" class="card card-img-top product-card" alt=“fish oil”></a>
+                            <a href="products-focus.html"><img src="Images/fishoil-2.webp" class="card card-img-top product-card" alt=“fish oil”></a>
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-9">
@@ -1175,6 +1175,79 @@
             </div>
         </div>
     </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid footer-items">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+                        <h2>General</h2>
+                        <a href="locations.html">
+                            <p>39 Triq Excelsior, Ħal Għargħur</p>
+                        </a>
+                        <a href="contact.html">
+                            <p>bertusgym@gmail.com</p>
+                        </a>
+                        <a href="contact.html">
+                            <p>+356 2141 3406</p>
+                        </a>
+                        <a href="products-focus.html"><img src="Icons/instagram-brands-solid-full.svg" alt="instagram url" width="50"
+                                height="50"></a>
+                        <a href="products-focus.html"><img src="Icons/square-facebook-brands-solid-full.svg" alt="facebook url" width="50"
+                                height="50"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+                        <h2>Services</h2>
+                        <a href="index.html#memberships">
+                            <p>Memberships</p>
+                        </a>
+                        <a href="class.html">
+                            <p>Classes</p>
+                        </a>
+                        <a href="pt-ov.html">
+                            <p>Personal Trainers</p>
+                        </a>
+                        <a href="products-merch.html">
+                            <p>Products</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+                        <h2>Opening Hours</h2>
+                        <p>Monday: 7am-9pm</p>
+                        <p>Tuesday: 7am-9pm</p>
+                        <p>Wednesday: 7am-9pm</p>
+                        <p>Thursday: 7am-9pm</p>
+                        <p>Friday: 7am-9pm</p>
+                        <p>Saturda: 7am-4pm</p>
+                        <p>Sunday: 7am-12pm</p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center footer-bottom-row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+                        <a href="contact.html">
+                            <button class="send-feedback-button">
+                                SEND FEEDBACK
+                            </button>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+                        <a href="rules-safety.html" class="flex-box">
+                            <h3>RULES & SAFETY</h3> <img src="Icons/arrow-down-solid-full-green.svg"
+                                alt="navigation arrow">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+                        <a href="login.html" class="flex-box">
+                            <h3>LOGIN</h3> <img src="Icons/arrow-down-solid-full-green.svg" alt="navigation arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer End-->
 
     <!--Javascript-->
     <script src="Script/bootstrap.js"></script>
