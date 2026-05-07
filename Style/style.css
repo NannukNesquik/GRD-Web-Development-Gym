@@ -10,7 +10,8 @@ body {
 }
 
 p,
-.profile-categories {
+.profile-categories,
+caption {
     color: white;
     font-size: 24px;
     font-family: 'roboto';
@@ -620,6 +621,32 @@ textarea {
     margin-bottom: 40px;
 }
 
+.log-in-page-button {
+    display: flex;
+    margin: auto;
+}
+
+.caption {
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.nav-tabs .nav-link {
+    color: #8ACE00;
+    border: none;
+    display: flex;
+    margin: auto;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: transparent;
+    color: #8ACE00;
+}
+
+.nav-tabs {
+    border: none;
+}
+
 /* login END */
 
 /* location */
@@ -669,6 +696,10 @@ textarea {
 .google-location h2 {
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.google-location {
+    padding-bottom: 140px;
 }
 
 /* location END*/
@@ -779,32 +810,19 @@ textarea {
     border: solid 3px #161715;
 }
 
-#calendar-left {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border: solid 3px #161715;
-}
-
-#calendar-right {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border: solid 3px #161715;
-}
-
 .calendar .navlink {
     border: solid 3px #161715;
 }
 
 .class-content {
     background-color: #323232;
-    padding: 40px 80px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
 }
 
 .class-content .row {
-    padding: 0px;
+    padding: 40px 80px;
     background-color: #323232;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .class-content h2 {
@@ -827,6 +845,24 @@ textarea {
 .calendar-month {
     margin-bottom: 40px;
     color: #8ACE00;
+}
+
+.class-carousel .control-prev,
+.control-next {
+    background-color: transparent;
+    border: none;
+}
+
+.class-carousel .control-prev {
+    position: absolute;
+    top: 25px;
+    margin-left: 400px;
+}
+
+.class-carousel .control-next {
+    position: absolute;
+    top: 25px;
+    margin-left: 860px;
 }
 
 /* LOCATIONS */
@@ -1144,6 +1180,18 @@ input {
     border: solid 2px #8ACE00;
 }
 
+.btn-primary:hover {
+    background-color: #8ACE00;
+    color: #161715;
+    border: solid 2px #8ACE00;
+}
+
+.btn:active {
+    background-color: #8ACE00;
+    color: #161715;
+    border: solid 2px #8ACE00;
+}
+
 .btn-secondary {
     background-color: #1D2A0E;
     color: #A5F502;
@@ -1230,6 +1278,8 @@ input {
 
 /* checkout end */
 
+/* view ongoing orders in profile */
+
 .view-order img {
     height: 100px;
     width: 100px;
@@ -1252,6 +1302,8 @@ input {
     margin-bottom: 140px;
 }
 
+/* view ongoing orders in profile end */
+
 /* product focus */
 .product-line h3 {
     font-size: 12px;
@@ -1273,37 +1325,34 @@ input {
     position: relative;
 }
 
-.product-stock img{
+.product-stock img {
     height: 28px;
     width: 28px;
     margin-right: 8px;
 }
 
-.product-stock{
+.product-stock {
     margin-bottom: -8px;
 }
 
-.product-line{
+.product-line {
     margin-bottom: 16px;
 }
 
-.product-price-inclvat{
+.product-price-inclvat {
     margin-bottom: 24px;
 }
 
-.suggested{
+.suggested {
     margin-top: 80px;
 }
 
 /* product focus end */
 
+/* my hero image uses block placement and i figured removing it on a smaller screen makes the most sense */
 @media screen and (max-width: 1369px) {
     .hero-image {
         opacity: 0;
-    }
-
-    .feedback {
-        height: 500px;
     }
 }
 
@@ -1338,5 +1387,70 @@ input {
     .products-page .carousel-arrowright-equip {
         top: 4285px;
         right: 185px;
+    }
+
+    /* making text smaller for smaller screens to make sure the content fits/doesnt spill out*/
+    h1 {
+        font-size: 150px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .membership-cta-card {
+        margin-bottom: 40px;
+    }
+
+    /* to make background image increase and make the background image section allow text to scroll*/
+    .locationbgimage {
+        background-size: 290%;
+        background-position: -375px;
+        overflow: auto;
+    }
+
+    .feedback {
+        padding: 0px 80px 0px 80px;
+        height: 400px;
+    }
+
+    .stars img {
+        height: 18px;
+        width: 18px;
+    }
+
+    .class-carousel .control-prev {
+        position: absolute;
+        top: 15px;
+        margin-left: 120px;
+    }
+
+    .class-carousel .control-next {
+        position: absolute;
+        top: 15px;
+        margin-left: 550px;
+    }
+}
+
+/* using different screens sizes to try and make the classes carousel as responsive as possible ;-; */
+@media screen and (max-width: 869px) {
+    .class-carousel .control-prev {
+        position: absolute;
+        top: 15px;
+        margin-left: 25px;
+    }
+
+    .class-carousel .control-next {
+        position: absolute;
+        top: 15px;
+        margin-left: 410px;
     }
 }

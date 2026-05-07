@@ -104,10 +104,19 @@
                             <input type="text" id="Password" class="form-control form-gym" name="AccPass"
                                 aria-label="Password" placeholder="Enter Password" required>
                         </div>
-                        <button type="submit" id="button2" class="button-default">
+                        <button type="submit" id="button2" class="button-default log-in-page-button">
                             Log-in
                         </button>
                     </form>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link green caption text-center" id="forgot-pass-tab" data-bs-toggle="tab"
+                            data-bs-target="#forgot-pass" type="button" role="tab" aria-controls="forgot-password"
+                            aria-selected="true">Forgot Password?</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show" id="forgot-pass" role="tabpanel"
+                            aria-labelledby="forgot-password"><p class="caption text-center">Check Inbox</p></div>
+                    </div>
                 </div>
                 <div class="col-lg-1 col-md-12 col-sm-12"></div>
                 <div class="col-lg-4 col-md-12 col-sm-12 mx-5">
@@ -145,7 +154,7 @@
                             <input type="text" id="regRePassword" class="form-control form-gym" name="RegReAccPass"
                                 aria-label="Re-type Password" placeholder="Re-Enter Password" required>
                         </div>
-                        <button type="submit" id="button2" class="button-default">
+                        <button type="submit" id="button2" class="button-default log-in-page-button">
                             Register
                         </button>
                     </form>
