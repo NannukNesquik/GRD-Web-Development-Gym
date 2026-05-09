@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
+    <title>PROFILE - DASHBOARD | BERTU'S GYM</title>
     <link rel="stylesheet" href="Style/bootstrap.min.css">
     <link rel="stylesheet" href="Style/style.css">
     <link
@@ -91,8 +91,15 @@
     <main>
         <div class="container-fluid">
             <div class="row profile-margins">
-                <!--need to add media query to turn into hambruger when small screen-->
-                <div class="col-3 profile-categories-column">
+                <!--I used chatgpt to make my side navigation bar into a hamburger menu on a smaller screen because I found it very hard to build myself, since I have one initial nav bar
+                https://chatgpt.com/share/69fede2f-dd64-838f-ba3a-be4f0c563f9c this is the chatgpt conversation-->
+                <button class="btn profile-menu-btn d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#profileMenu">
+                    PROFILE MENU
+                </button>
+
+                <!-- DESKTOP SIDEBAR -->
+                <div class="col-3 profile-categories-column d-none d-lg-block">
                     <a href="profile.html" class="profile-categories" id="profile-selected">DASHBOARD</a>
                     <a href="orders.html" class="profile-categories">ORDERS</a>
                     <a href="sessions.html" class="profile-categories">SESSION PUNCH IN</a>
@@ -100,18 +107,38 @@
                     <a href="account.html" class="profile-categories">ACCOUNT DETAILS</a>
                     <a href="login.html" class="profile-categories">LOG-OUT</a>
                 </div>
+
+                <!-- Page content -->
                 <div class="col-9 profile-content">
                     <div class="welcome">
-                    <h2>WELCOME AMY BUGEJA!</h2>
-                    <h3 class="green mb-3">Ready for your next workout?</h3>
-                    <p>Your membership is active, let's get moving.</p>
+                        <h2>WELCOME AMY BUGEJA!</h2>
+                        <h3 class="green mb-3">Ready for your next workout?</h3>
+                        <p>Your membership is active, let's get moving.</p>
                     </div>
 
                     <div class="profile-membership-status">
                         <h2>Membership Status</h2>
                         <h3>Time Remaining: <span class="ms-5 green">60 Days Remaining</span></h3>
                     </div>
+                </div>
 
+                <!-- OFFCANVAS -->
+                <div class="offcanvas offcanvas-start profile-offcanvas d-lg-none" tabindex="-1" id="profileMenu">
+
+                    <div class="offcanvas-header">
+                        <h2 class="offcanvas-title">PROFILE</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+                        </button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <a href="profile.html" class="profile-categories" id="profile-selected">DASHBOARD</a>
+                        <a href="orders.html" class="profile-categories">ORDERS</a>
+                        <a href="sessions.html" class="profile-categories">SESSION PUNCH IN</a>
+                        <a href="bookedclasses.html" class="profile-categories">CLASSES</a>
+                        <a href="account.html" class="profile-categories">ACCOUNT DETAILS</a>
+                        <a href="login.html" class="profile-categories">LOG-OUT</a>
+                    </div>
                 </div>
             </div>
         </div>

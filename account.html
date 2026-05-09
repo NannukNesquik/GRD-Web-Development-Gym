@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
+    <title>PROFILE - ACCOUNT DETAILS | BERTU'S GYM</title>
     <link rel="stylesheet" href="Style/bootstrap.min.css">
     <link rel="stylesheet" href="Style/style.css">
     <link
@@ -91,7 +91,15 @@
     <main>
         <div class="container-fluid">
             <div class="row profile-margins">
-                <div class="col-3 profile-categories-column">
+                <!--I used chatgpt to make my side navigation bar into a hamburger menu on a smaller screen because I found it very hard to build myself, since I have one initial nav bar
+                https://chatgpt.com/share/69fede2f-dd64-838f-ba3a-be4f0c563f9c this is the chatgpt conversation-->
+                <button class="btn profile-menu-btn d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#profileMenu">
+                    PROFILE MENU
+                </button>
+
+                <!-- DESKTOP SIDEBAR -->
+                <div class="col-3 profile-categories-column d-none d-lg-block">
                     <a href="profile.html" class="profile-categories">DASHBOARD</a>
                     <a href="orders.html" class="profile-categories">ORDERS</a>
                     <a href="sessions.html" class="profile-categories">SESSION PUNCH IN</a>
@@ -99,7 +107,9 @@
                     <a href="account.html" class="profile-categories" id="profile-selected">ACCOUNT DETAILS</a>
                     <a href="login.html" class="profile-categories">LOG-OUT</a>
                 </div>
-                <div class="col-lg-9 col-md-12 col-sm-12s profile-content">
+
+                <!-- Page content -->
+                <div class="col-9 profile-content">
                     <h2>ACCOUNT DETAILS</h2>
                     <div class="personal-information">
                         <h3 class="green account-title">PERSONAL INFORMATION</h3>
@@ -131,6 +141,24 @@
                                 Change Password
                             </button>
                         </form>
+                    </div>
+                </div>
+                <!-- OFFCANVAS -->
+                <div class="offcanvas offcanvas-start profile-offcanvas d-lg-none" tabindex="-1" id="profileMenu">
+
+                    <div class="offcanvas-header">
+                        <h2 class="offcanvas-title">PROFILE</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+                        </button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <a href="profile.html" class="profile-categories">DASHBOARD</a>
+                        <a href="orders.html" class="profile-categories">ORDERS</a>
+                        <a href="sessions.html" class="profile-categories">SESSION PUNCH IN</a>
+                        <a href="bookedclasses.html" class="profile-categories">CLASSES</a>
+                        <a href="account.html" class="profile-categories" id="profile-selected">ACCOUNT DETAILS</a>
+                        <a href="login.html" class="profile-categories">LOG-OUT</a>
                     </div>
                 </div>
             </div>

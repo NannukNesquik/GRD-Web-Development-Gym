@@ -28,7 +28,7 @@ h2,
 .notselected-cat,
 .selected-cat,
 .cat-selected,
-.cat-notselected {
+.cat-notselected, .profile-offcanvas a{
     color: white;
     font-size: 64px;
     font-family: 'oswald';
@@ -43,7 +43,7 @@ label,
 .qty-input,
 .button-coupon,
 .button-checkout,
-.button-default-disabled {
+.button-default-disabled, .profile-offcanvas a, .profile-menu-btn{
     color: white;
     font-size: 24px;
     font-family: 'roboto';
@@ -767,6 +767,7 @@ textarea {
 
 .personal-trainer-focus-icons p {
     margin-left: -8px;
+    margin-top: 3px;
 }
 
 /* classes */
@@ -873,6 +874,45 @@ textarea {
 /* LOCATIONS END */
 
 /* PROFILE */
+
+/* Hamburger Menu Given from chatgpt */
+/* Mobile Hamburger Button */
+.profile-menu-btn {
+    background-color: #8ACE00;
+    color: #161715;
+    border: none;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+}
+
+/* !not chatgpt! to add hover state styling */
+.profile-menu-btn:hover{
+    background-color: #1D2A0E;
+    color: #A5F502;
+}
+
+/* Offcanvas */
+.profile-offcanvas {
+    background-color: #161715;
+    width: 320px;
+}
+
+/* Offcanvas Header */
+.profile-offcanvas .offcanvas-header {
+    border-bottom: solid 3px #8ACE00;
+}
+
+/* Close button white */
+.btn-close {
+    filter: invert(1);
+}
+
+/* Prevent extra spacing */
+.profile-offcanvas .offcanvas-body {
+    padding: 0;
+}
+/* end of chatgpt hamburger menu*/
+
 .profile-margins {
     margin-top: 140px;
 }
@@ -1347,12 +1387,44 @@ input {
     margin-top: 80px;
 }
 
+.suggested-images {
+    height: 200px;
+    margin-top: 16px;
+    position: relative;
+    overflow: scroll;
+}
+
+.suggested-images img {
+    border-radius: 15px;
+    margin-right: 40px;
+    width: 400px;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px #00000085;
+}
+
 /* product focus end */
 
 /* my hero image uses block placement and i figured removing it on a smaller screen makes the most sense */
 @media screen and (max-width: 1369px) {
     .hero-image {
         opacity: 0;
+    }
+
+    /* making text smaller for smaller screens to make sure the content fits/doesnt spill out*/
+    h1 {
+        font-size: 150px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 20px;
     }
 }
 
@@ -1387,23 +1459,6 @@ input {
     .products-page .carousel-arrowright-equip {
         top: 4285px;
         right: 185px;
-    }
-
-    /* making text smaller for smaller screens to make sure the content fits/doesnt spill out*/
-    h1 {
-        font-size: 150px;
-    }
-
-    h2 {
-        font-size: 50px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 20px;
     }
 
     .membership-cta-card {
@@ -1445,12 +1500,16 @@ input {
     .class-carousel .control-prev {
         position: absolute;
         top: 15px;
-        margin-left: 25px;
+        margin-left: 35px;
     }
 
     .class-carousel .control-next {
         position: absolute;
         top: 15px;
         margin-left: 410px;
+    }
+
+    .personal-trainer-focus-icons p {
+        margin-left: 8px;
     }
 }
