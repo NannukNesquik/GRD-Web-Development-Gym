@@ -127,19 +127,23 @@
                             <div class="col-lg-6 col-md-6 col-sm-12" id="divPhone">
                                 <label for="Phone">Phone Number:</label>
                                 <input type="text" id="Phone" class="form-control form-gym" aria-label="Phone"
-                                    name="regPhoneNumber" placeholder="Enter Phone Number" required pattern="[0-9]{8}">
+                                    name="regPhoneNumber" placeholder="Enter Phone Number" required
+                                    pattern="(77|79|98|99)[0-9]{6}" title="Enter a valid Maltese phone number">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12" id="divEmail">
                                 <label for="Email">E-mail:</label>
                                 <input type="text" id="Email" class="form-control form-gym" name="regEmailAddress"
-                                    aria-label="E-mail" placeholder="Enter E-mail Address" required>
+                                    aria-label="E-mail" placeholder="Enter E-mail Address" required
+                                    pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+                                    title="Please enter a valid email address">
                             </div>
                         </div>
                         <div class="row basket-form align-items-center">
                             <div class="col-lg-6 col-md-6 col-sm-12" id="divBuilding">
                                 <label for="building">Building Name & Number:</label>
-                                <input type="text" id="building" class="form-control form-gym" aria-label="building name"
-                                    name="buildingName" placeholder="Enter Building Name & Number" required>
+                                <input type="text" id="building" class="form-control form-gym"
+                                    aria-label="building name" name="buildingName"
+                                    placeholder="Enter Building Name & Number" required>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12" id="divStreet">
                                 <label for="street">Street Name:</label>
@@ -148,21 +152,25 @@
                             </div>
                         </div>
                         <div class="row basket-form align-items-center">
-                            <div class="col-lg-6 col-md-6 col-sm-12" id="divCity">                   
-                                    <label for="city">Locality:</label>
-                                    <select name="cityName" id="city" class="form-gym" required>
-                                        <option value="" disabled selected>Select City</option>
-                                        <option value="1">Gharghur</option>
-                                        <option value="2">Naxxar</option>
-                                        <option value="3">Mosta</option>
-                                        <option value="4">San Gwann</option>
-                                    </select>
+                            <div class="col-lg-6 col-md-6 col-sm-12" id="divCity">
+                                <label for="city">Locality:</label>
+                                <select name="cityName" id="city" class="form-gym" required>
+                                    <option value="" disabled selected>Select City</option>
+                                    <option value="1">Gharghur</option>
+                                    <option value="2">Naxxar</option>
+                                    <option value="3">Mosta</option>
+                                    <option value="4">San Gwann</option>
+                                </select>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12" id="divPost">
                                 <label for="Post">Postal Code:</label>
                                 <input type="text" id="Post" class="form-control form-gym" name="PostCode"
-                                    aria-label="E-mail" placeholder="Enter Post Code" required>
+                                    aria-label="E-mail" placeholder="Enter Post Code" required
+                                    pattern="[A-Za-z]{3}\s?[0-9]{4}"
+                                    title="Enter a valid Maltese postal code (BKR 9030)">
                             </div>
+
+                            <!-- patterns https://www.w3schools.com/TAGs/att_input_pattern.asp -->
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12">
@@ -181,16 +189,16 @@
                                         <h3>€90</h3>
                                     </div>
                                 </div>
-                                    <h3>COUPON CODE</h3>
-                                    <div class="row">
-                                        <div class="col-7">
-                                            <input type="text" class="form-control form-gym" placeholder="Enter Code"
-                                                aria-label="Enter Code">
-                                        </div>
-                                        <div class="col-5">
-                                            <button class="button-coupon">Get Code</button>
-                                        </div>
+                                <h3>COUPON CODE</h3>
+                                <div class="row">
+                                    <div class="col-7">
+                                        <input type="text" class="form-control form-gym" placeholder="Enter Code"
+                                            aria-label="Enter Code">
                                     </div>
+                                    <div class="col-5">
+                                        <button class="button-coupon">Get Code</button>
+                                    </div>
+                                </div>
                                 <div class="row total-price">
                                     <div class="col-10">
                                         <h3 class="order-summary-title">TOTAL</h3>
@@ -281,7 +289,7 @@
         </div>
     </footer>
     <!-- footer End-->
-     
+
     <!--Javascript-->
     <script src="Script/bootstrap.bundle.min.js"></script>
 </body>

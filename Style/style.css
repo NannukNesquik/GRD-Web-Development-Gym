@@ -28,7 +28,8 @@ h2,
 .notselected-cat,
 .selected-cat,
 .cat-selected,
-.cat-notselected, .profile-offcanvas a{
+.cat-notselected,
+.profile-offcanvas a {
     color: white;
     font-size: 64px;
     font-family: 'oswald';
@@ -43,7 +44,9 @@ label,
 .qty-input,
 .button-coupon,
 .button-checkout,
-.button-default-disabled, .profile-offcanvas a, .profile-menu-btn{
+.button-default-disabled,
+.profile-offcanvas a,
+.profile-menu-btn {
     color: white;
     font-size: 24px;
     font-family: 'roboto';
@@ -647,6 +650,15 @@ textarea {
     border: none;
 }
 
+.show-password-box{
+    margin-top: -16px;
+}
+
+.show-password-box label{
+    font-size: 12px;
+    margin-left: 8px;
+    margin-top: 3px;
+}
 /* login END */
 
 /* location */
@@ -886,7 +898,7 @@ textarea {
 }
 
 /* !not chatgpt! to add hover state styling */
-.profile-menu-btn:hover{
+.profile-menu-btn:hover {
     background-color: #1D2A0E;
     color: #A5F502;
 }
@@ -911,6 +923,7 @@ textarea {
 .profile-offcanvas .offcanvas-body {
     padding: 0;
 }
+
 /* end of chatgpt hamburger menu*/
 
 .profile-margins {
