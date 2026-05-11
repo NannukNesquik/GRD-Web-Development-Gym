@@ -97,6 +97,7 @@
                         <h1>CARD DETAILS</h1>
                     </div>
                 </div>
+                <!-- progress bar for checkout so the user knows how close they are to finishing a task -->
                 <div class="position-relative m-4">
                     <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="0" aria-valuemin="0"
                         aria-valuemax="100" style="height: 3px;">
@@ -126,6 +127,7 @@
                         <div class="row basket-form align-items-center justify-content-center">
                             <div class="col-lg-8 col-md-8 col-sm-8" id="divCredit">
                                 <label for="Credit">Credit Card Number:</label>
+                                <!-- pattern is used to have the same amount of numbers as a regular credit cards and avoid any letters-->
                                 <input type="text" id="Credit" class="form-control form-gym" aria-label="credit card number"
                                     name="creditCardNumber" placeholder="1111-2222-3333-4444" required pattern="[0-9]{16}">
                             </div>
@@ -133,12 +135,14 @@
                         <div class="row basket-form align-items-center justify-content-center">
                             <div class="col-lg-4 col-md-4 col-sm-8" id="divExpiry">
                                 <label for="Expiry">Expiry Date:</label>
+                                <!-- pattern is used so user has to put a valid month and year-->
                                 <input type="text" id="Expiry" class="form-control form-gym"
                                     aria-label="expiry date" name="expiryDate"
                                     placeholder="MM/YYYY" required pattern="[0-12]{2}/[0-9]{4}">
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-8" id="divCVC">
                                 <label for="CVC">CVC/CVV:</label>
+                                <!-- used a pattern to have only 3 numbers and avoid any letters -->
                                 <input type="CVC" id="street" class="form-control form-gym" name="CVC/CVV"
                                     aria-label="CVC/CVV" placeholder="123" required pattern="[0-9]{3}">
                             </div>
@@ -185,6 +189,7 @@
                                         <h3>€90</h3>
                                     </div>
                                 </div>
+                                <!-- styling is used to get the button in the middle -->
                                 <button type="submit" class="button-checkout"
                                     style="margin: 0 auto; display: block;">Pay Online</button>
                             </div>

@@ -89,6 +89,7 @@
     <!-- Navbar End -->
 
     <main>
+        <!-- contact page-->
         <div class="container">
             <div class="row page-margins">
                 <div class="col-lg-7 col-md-12 col-sm-12 contact-title">
@@ -124,11 +125,13 @@
                                 height="50">
                         </div>
                     </div>
-
                 </div>
+
+                <!-- mailto form -->
                 <div class="col-lg-5 col-md-12 col-sm-12">
                     <form action="mailto:bertusgym@gmail.com" method="post" enctype="text/plain">
                         <div id="divFirstName">
+                            <!-- id's are used frequently here to make sure the correct input is targeted-->
                             <label for="firstName">First Name:</label>
                             <input type="text" id="firstName" class="form-control form-gym" name="name" placeholder="Joe" required>
                         </div>
@@ -139,8 +142,10 @@
                         </div>
                         <div id="divEmail">
                             <label for="email">E-mail:</label>
+                            <!-- pattern for email address to have @ gmail .com or any email platforms such as hotmail or .net-->
                             <input type="text" id="email" class="form-control form-gym" name="emailAddress"
-                                placeholder="joeborg@gmail.com" required>
+                                placeholder="joeborg@gmail.com" required pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+                                title="Please enter a valid email address">
                         </div>
                         <div id="divMessage">
                             <label for="message">Message:</label>

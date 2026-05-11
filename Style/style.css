@@ -1,3 +1,4 @@
+/* removes any default padding and margins */
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +7,14 @@
 /* main */
 body {
     background-color: #161715;
+    /* to make sure the page doesnt horiztonally scroll */
     overflow-x: hidden;
 }
 
 p,
 .profile-categories,
-caption {
+caption,
+.rules-safety {
     color: white;
     font-size: 24px;
     font-family: 'roboto';
@@ -24,6 +27,7 @@ h1 {
     font-size: 200px;
 }
 
+/* to avoid extra lines of css I added classes that will use the same h/p styling accordingly */
 h2,
 .notselected-cat,
 .selected-cat,
@@ -114,7 +118,8 @@ a {
 
 /* footer ends */
 
-/* buttons */
+/* buttons found throughout the website */
+/* default is the most commonly used button styling*/
 .button-default {
     background-color: #A5F502;
     border: 3px solid #A5F502;
@@ -226,6 +231,7 @@ a {
 }
 
 .text-bg-dark {
+    /* important is to make sure it overrides any bootstrap styling */
     background-color: #161715 !important;
 }
 
@@ -251,6 +257,7 @@ a {
     background-color: #A5F502;
     height: 140px;
     color: #16210A;
+    /* underline is used for accessibility reasons */
     text-decoration: underline;
 }
 
@@ -274,12 +281,13 @@ a {
 
 /* navigation bar end */
 
-/* id target */
+/* id target for products view all and focus page. this is because i have multiple "pages" that usee the same styling just differnt images/text in a singular page that are hidden unless are target by using display none*/
 .target {
     display: none;
     padding-top: 140px;
 }
 
+/* display block is used to unhide that specifically targetted page */
 .target:target {
     display: block;
 }
@@ -293,6 +301,7 @@ a {
     border-radius: 15px;
 }
 
+/* spacing styling of each form box looking back probably couldve used a singular class to target all */
 #divCredit input {
     display: block;
     margin-top: 5px;
@@ -407,7 +416,6 @@ textarea {
     width: 100%;
     z-index: 3;
     overflow: hidden;
-    pointer-events: none;
 }
 
 .hero-page h1 {
@@ -426,18 +434,21 @@ textarea {
 .hero-image img {
     height: 800px;
     margin-left: 600px;
+    /* flip the image horiztonally */
     transform: scaleX(-1);
 }
 
 /* hero section ends */
 
 /* Banner */
+/* z-index to have the banner overlap over the hero image */
 .banner-layer {
     z-index: 3;
-    /*to stop the cursor from changing over the paragraph*/
+    /* to stop the cursor from changing to a pointer when hovering over the text */
     pointer-events: none;
 }
 
+/* banner positioning and overall styling */
 .diagonal-banner {
     position: absolute;
     left: 50%;
@@ -452,6 +463,7 @@ textarea {
     font-weight: bold;
 }
 
+/* styling to have banners slightly rotated */
 .banner-1 {
     bottom: 20px;
     transform: translateX(-50%) rotate(-9deg);
@@ -469,6 +481,7 @@ textarea {
     height: 300px;
     object-fit: cover;
     box-shadow: 0px 4px 4px #00000085;
+    /* to make images blakc and white */
     filter: grayscale(100%);
 }
 
@@ -482,12 +495,15 @@ textarea {
     display: block;
 }
 
+/* cta card styling to give shadow and to give an animation to the transition when hovering */
 .membership-cta-card {
     border: none;
     border-radius: 15px;
     box-shadow: 0px 4px 4px #00000055;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transition: 0.25s ease;
 }
+
+/* card animation moving up 8px and increasing shadow size */
 
 .membership-cta-card:hover {
     transform: translateY(-8px);
@@ -502,17 +518,6 @@ textarea {
     justify-content: end;
 }
 
-/*
-.cta-arrow {
-    position: absolute;
-    top: 16px;
-    right: 18px;
-    color: white;
-    font-size: 44px;
-    font-weight: bold;
-    line-height: 1;
-}*/
-
 .membership-cta-title {
     margin-bottom: 10px;
     text-shadow: 0px 2px 10px #000000;
@@ -525,7 +530,7 @@ textarea {
 
 /* cta cards end */
 
-/* Memberships */
+/* Memberships SECTION */
 .memberships {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -544,8 +549,11 @@ textarea {
     background-color: #1D2A0E;
 }
 
+/* TO GIVE MEMBERSHIPS ENTIRE CONTAINER ROUNDED EDGES ON THE START AND END BOXES */
+
 .memberships-colour-1-left {
     background-color: #1D2A0E;
+    /* to target specific corners of the border */
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
@@ -572,6 +580,8 @@ textarea {
     margin-bottom: 12px;
 }
 
+/* FEEDBACK CAROUSEL PADDING TO NOT LET TEXT TAKE THE ENITRE HORIZONTAL SPACE AND OVERLAP THE CONTROL BUTTONS */
+
 .feedback {
     padding: 0px 180px 0px 180px;
     height: 300px;
@@ -581,7 +591,6 @@ textarea {
 /* homepage ends */
 
 /* contact page */
-
 .contact-title h1 {
     font-size: 200px;
     color: #8ACE00;
@@ -634,6 +643,7 @@ textarea {
     margin-top: 16px;
 }
 
+/* to make check inbox text pop up when forogt password is pressed using bootstrap nav-tabs  */
 .nav-tabs .nav-link {
     color: #8ACE00;
     border: none;
@@ -650,19 +660,22 @@ textarea {
     border: none;
 }
 
-.show-password-box{
+/* SHOW PASSWORD CHECKBOX STYLING */
+
+.show-password-box {
     margin-top: -16px;
 }
 
-.show-password-box label{
+.show-password-box label {
     font-size: 12px;
     margin-left: 8px;
     margin-top: 3px;
 }
+
 /* login END */
 
-/* location */
-/* herosection end */
+/* LOCATION PAGE */
+/* herosection  */
 .locationbgimage {
     background: linear-gradient(0deg, #16171564, #16171564), url('../Images/bertusfrontsign.jpg');
     background-size: cover;
@@ -687,6 +700,10 @@ textarea {
     margin-bottom: 8px;
 }
 
+#location-phone {
+    margin-top: 40px;
+}
+
 /* herosection end */
 
 /* gym gallery */
@@ -705,6 +722,8 @@ textarea {
 
 /* gym gallery end */
 
+/* GOOGLE MAPS EMBBED STYLING */
+
 .google-location h2 {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -714,7 +733,7 @@ textarea {
     padding-bottom: 140px;
 }
 
-/* location END*/
+/* LOCATION END*/
 
 /* Personal trainers overview */
 .pt-card {
@@ -733,6 +752,7 @@ textarea {
 }
 
 .card-img-top:hover {
+    /* to make images black and white */
     filter: grayscale(100%);
 }
 
@@ -754,6 +774,7 @@ textarea {
     width: 600px;
     border-radius: 15px;
     box-shadow: 0px 4px 4px #00000085;
+    object-fit: cover;
 }
 
 .personal-trainer-focus h1 {
@@ -805,6 +826,7 @@ textarea {
     border: none;
 }
 
+/* to make each class information pop up when a date is pressed */
 .nav-pills .nav-link.active {
     background-color: #8ACE00;
     color: #161715;
@@ -827,6 +849,7 @@ textarea {
     border: solid 3px #161715;
 }
 
+/* class information styling */
 .class-content {
     background-color: #323232;
 }
@@ -860,6 +883,7 @@ textarea {
     color: #8ACE00;
 }
 
+/* THIS IS TO POSITION MY CONTROL BUTTONS */
 .class-carousel .control-prev,
 .control-next {
     background-color: transparent;
@@ -878,16 +902,11 @@ textarea {
     margin-left: 860px;
 }
 
-/* LOCATIONS */
-#location-phone {
-    margin-top: 40px;
-}
-
-/* LOCATIONS END */
+/* Classes end */
 
 /* PROFILE */
 
-/* Hamburger Menu Given from chatgpt */
+/* Hamburger Menu Given from chatgpt BECAUSE I DID NOT MANAGE TO FIGURE OUT HOW TO MAKE THE HAMBURGER MENU WITHOUT USING <NAV> ELEMENT ALTHOUGH I DO HAVE A BETTER IDEA NOW */
 /* Mobile Hamburger Button */
 .profile-menu-btn {
     background-color: #8ACE00;
@@ -903,23 +922,23 @@ textarea {
     color: #A5F502;
 }
 
-/* Offcanvas */
+/* offcanvas */
 .profile-offcanvas {
     background-color: #161715;
     width: 320px;
 }
 
-/* Offcanvas Header */
+/* offcanvas Header */
 .profile-offcanvas .offcanvas-header {
     border-bottom: solid 3px #8ACE00;
 }
 
-/* Close button white */
+/* to make close button white */
 .btn-close {
     filter: invert(1);
 }
 
-/* Prevent extra spacing */
+/* prevent extra spacing */
 .profile-offcanvas .offcanvas-body {
     padding: 0;
 }
@@ -948,7 +967,7 @@ textarea {
     padding: 56px 0px 56px 26px;
 }
 
-.profile-content {
+.profile-content, .order-number {
     padding-left: 40px;
     margin-bottom: 140px;
 }
@@ -1016,10 +1035,29 @@ input {
     margin-bottom: 40px;
 }
 
+/* THIS IS TO POSITION MY CONTROL BUTTONS */
+.session-carousel .control-prev,
+.control-next {
+    background-color: transparent;
+    border: none;
+}
+
+.session-carousel .control-prev {
+    position: absolute;
+    top: 25px;
+    margin-left: 220px;
+}
+
+.session-carousel .control-next {
+    position: absolute;
+    top: 25px;
+    margin-left: 790px;
+}
+
 /*session punch in end */
 
 /* Products All */
-
+/* PRODUCT CARD STYLING */
 .products-top3 p {
     margin-bottom: 4px;
 }
@@ -1090,6 +1128,7 @@ input {
     margin-bottom: 40px;
 }
 
+/* TO POSITION ARROWS IN THE POSITION I WANT SINCE I AM USING POSITION ABSOLUTE */
 .products-page .carousel-arrowleft-tops {
     position: absolute;
     top: 40px;
@@ -1147,6 +1186,8 @@ input {
 /* Products Carousel End*/
 
 /* orders */
+
+/* BUILDING THE CONTAINER WITH THE IMAGES INSIDE */
 .order-main-image img {
     height: 200px;
     border-radius: 15px;
@@ -1204,7 +1245,8 @@ input {
 
 /* orders confirmation end */
 
-/* checkout */
+/* checkout *
+/* STRIP FOR CHECKOUT */
 .background-strip,
 .background-strip-view-order {
     background-color: #8ACE00;
@@ -1219,6 +1261,7 @@ input {
     color: #161715;
 }
 
+/* HAD TO MAKE MY OWN STYLING FOR THE PROGRESS BAR TO ADD AN EXTRA STEP */
 .start-25 {
     left: 33.33% !important;
 }
@@ -1227,6 +1270,7 @@ input {
     left: 66.66% !important;
 }
 
+/* PROGRESS BAR STLYING TO MATCH BRAND. AS IT WAS A BOOTSTRAP TEMPLATE */
 .btn-primary {
     background-color: #8ACE00;
     color: #8ACE00;
@@ -1417,10 +1461,31 @@ input {
 
 /* product focus end */
 
+/* rules and safety page */
+.rule-image {
+    filter: grayscale(100%);
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px #00000085;
+}
+
+.safety-precautions {
+    margin-top: 80px;
+}
+
+/* rules and safety page end */
+
 /* my hero image uses block placement and i figured removing it on a smaller screen makes the most sense */
 @media screen and (max-width: 1369px) {
+
+    /* display none is used to remove any extra elements that are not necessary for smaller screens to improve responsiveness */
     .hero-image {
-        opacity: 0;
+        display: none;
+    }
+
+    .contact-arrow {
+        display: none;
     }
 
     /* making text smaller for smaller screens to make sure the content fits/doesnt spill out*/
@@ -1438,6 +1503,18 @@ input {
 
     p {
         font-size: 20px;
+    }
+
+    .order-again button {
+        font-size: 18px;
+    }
+
+    .order-sub-image {
+        margin-left: 45px;
+    }
+
+    .order-number{
+        margin-bottom: 16px;
     }
 }
 
@@ -1478,23 +1555,26 @@ input {
         margin-bottom: 40px;
     }
 
-    /* to make background image increase and make the background image section allow text to scroll*/
+    /* to make background image increase and make the background image section allow text to scroll */
     .locationbgimage {
         background-size: 290%;
         background-position: -375px;
         overflow: auto;
     }
 
+    /* feedback responsiveness */
     .feedback {
         padding: 0px 80px 0px 80px;
         height: 400px;
     }
 
+    /* make stars smaller to take up less space */
     .stars img {
         height: 18px;
         width: 18px;
     }
 
+    /* position carousel control buttons for each specific screen size */
     .class-carousel .control-prev {
         position: absolute;
         top: 15px;
@@ -1506,10 +1586,32 @@ input {
         top: 15px;
         margin-left: 550px;
     }
+
+    .session-carousel .control-prev {
+        position: absolute;
+        top: 15px;
+        margin-left: 170px;
+    }
+
+    .session-carousel .control-next {
+        position: absolute;
+        top: 15px;
+        margin-left: 655px;
+    }
+
+    .order-sub-image {
+        margin-left: 75px;
+    }
+
+    .order-again button {
+        font-size: 16px;
+    }
 }
 
 /* using different screens sizes to try and make the classes carousel as responsive as possible ;-; */
 @media screen and (max-width: 869px) {
+
+    /* position carousel control buttons for each specific screen size */
     .class-carousel .control-prev {
         position: absolute;
         top: 15px;
@@ -1517,6 +1619,18 @@ input {
     }
 
     .class-carousel .control-next {
+        position: absolute;
+        top: 15px;
+        margin-left: 410px;
+    }
+
+    .session-carousel .control-prev {
+        position: absolute;
+        top: 15px;
+        margin-left: 5px;
+    }
+
+    .session-carousel .control-next {
         position: absolute;
         top: 15px;
         margin-left: 410px;

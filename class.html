@@ -89,6 +89,7 @@
     <!-- Navbar End -->
 
     <main>
+        <!-- Classes page for users to book classes. no booking function inmplemented though, only lets you press book button -->
         <div class="container page-margins">
             <div class="row">
                 <div class="col text-center">
@@ -96,6 +97,7 @@
                 </div>
             </div>
 
+            <!-- weeks of the month carousel only did the month of March -->
             <div id="carouselExample" class="carousel slide class-carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -104,6 +106,8 @@
                                 <h2 class="calendar-month">MARCH 2026</h2>
                             </div>
                         </div>
+                        <!-- tabs is used so the classes information can be toggled from display none to display block -->
+                        <!-- styled similarly to memberships section in the homepage -->
                         <div class="row calendar text-center nav nav-pills" role="tablist">
                             <button type="button" class="col calendar-dates nav-link">
                                 <div class="row">
@@ -222,6 +226,7 @@
                             </button>
                         </div>
                         <div class="container-fluid tab-content">
+                            <!-- classes information content. id is used to target the specific class that is corelated with a specific date -->
                             <div class="tab-pane fade class-content" id="class-1">
                                 <div class="row">
                                     <div class="col-lg-10 col-md-12 col-sm-12">
@@ -297,7 +302,7 @@
                                 </div>
                             </button>
                             <button type="button" class="col calendar-dates nav-link" data-bs-toggle="pill"
-                                data-bs-target="#class-4"> 
+                                data-bs-target="#class-4">
                                 <div class="row">
                                     <div class="col-12">
                                         <h3 class="calendar-day">Tue</h3>
@@ -689,13 +694,11 @@
                         </div>
                     </div>
                 </div>
-                <button class="control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
+                <button class="control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
+                <button class="control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>

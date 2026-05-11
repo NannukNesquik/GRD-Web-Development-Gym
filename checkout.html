@@ -90,12 +90,14 @@
     <!-- Navbar End -->
 
     <main>
+        <!-- basket page for the user to add or remove items before proceeding to checkout -->
         <div class="container page-margins">
             <div class="row">
                 <div class="col-6">
                     <h1>BASKET</h1>
                 </div>
             </div>
+            <!-- progress bar for checkout so the user knows how close they are to finishing a task -->
             <div class="position-relative m-4">
                 <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="0" aria-valuemin="0"
                     aria-valuemax="100" style="height: 3px;">
@@ -116,6 +118,7 @@
             </div>
             <br>
             <div class="row gx-5">
+                <!-- headers for each column -->
                 <div class="col-lg-8 col-md-12 col-sm-12">
                     <div class="row background-strip align-items-center">
                         <div class="col-5">
@@ -131,6 +134,8 @@
                             <h3>DELETE</h3>
                         </div>
                     </div>
+
+                    <!-- products in cart with an input field for a user to increase the quantity of the product. THIS DOES NOT UNFLUENCE THE PRICE TOTALS-->
                     <div class="row basket-item align-items-center">
                         <div class="col-5 d-flex align-items-center gap-3">
                             <img src="Images/sports-bra-3.avif" alt="sports bra">
@@ -199,6 +204,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-12">
+                    <!-- ORDER SUMMARY INCLUDES THE TOTAL AND SUBTOTAL AND COUPON CODE OPTION THAT ONLY LETS YOU PRESS THE BUTTON. DOES NOT INFLUENCE TOTAL PRICE-->
                     <div class="row background-strip">
                         <div class="col-12">
                             <h3>ORDER SUMMARY</h3>
@@ -233,6 +239,7 @@
                                 </div>
                             </div>
                             <form action="address.html">
+                                <!-- styling is used to get the button in the middle -->
                                 <button type="submit" class="button-checkout"
                                     style="margin: 0 auto; display: block;">Proceed
                                     to Checkout</button>
