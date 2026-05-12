@@ -74,6 +74,20 @@ a {
     padding-bottom: 140px;
 }
 
+.hr {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.hr-card {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    width: 100%;
+    margin-top: 40px;
+}
+
 /* main end */
 
 /* Footer */
@@ -967,7 +981,8 @@ textarea {
     padding: 56px 0px 56px 26px;
 }
 
-.profile-content, .order-number {
+.profile-content,
+.order-number {
     padding-left: 40px;
     margin-bottom: 140px;
 }
@@ -1243,6 +1258,16 @@ input {
     margin-top: 40px;
 }
 
+.confirmation-summary-card img {
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+}
+
+.confirmation-summary-card {
+    margin-top: 16px;
+}
+
 /* orders confirmation end */
 
 /* checkout *
@@ -1373,6 +1398,10 @@ input {
     margin-bottom: 46px;
 }
 
+.total-price-card {
+    margin-top: 40px;
+}
+
 /* checkout end */
 
 /* view ongoing orders in profile */
@@ -1447,16 +1476,22 @@ input {
 .suggested-images {
     height: 200px;
     margin-top: 16px;
-    position: relative;
-    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+}
+
+.suggested-images a {
+    margin-right: 28px;
 }
 
 .suggested-images img {
     border-radius: 15px;
-    margin-right: 40px;
-    width: 400px;
+    width: 230px;
+    height: 200px;
     object-fit: cover;
     box-shadow: 0px 4px 4px #00000085;
+    display: block;
 }
 
 /* product focus end */
@@ -1505,15 +1540,18 @@ input {
         font-size: 20px;
     }
 
+    /* reduced order history button size to mkae sure it it sized appropriately for smaller screens*/
     .order-again button {
         font-size: 18px;
     }
 
+    /* order history fixed spacing between product images */
     .order-sub-image {
         margin-left: 45px;
     }
 
-    .order-number{
+    /* ongoing orders fixed spacing */
+    .order-number {
         margin-bottom: 16px;
     }
 }
@@ -1605,6 +1643,10 @@ input {
 
     .order-again button {
         font-size: 16px;
+    }
+
+    .suggested-images a {
+        flex-shrink: 0;
     }
 }
 

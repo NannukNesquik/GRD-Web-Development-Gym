@@ -128,17 +128,17 @@
                             <div class="col-lg-8 col-md-8 col-sm-8" id="divCredit">
                                 <label for="Credit">Credit Card Number:</label>
                                 <!-- pattern is used to have the same amount of numbers as a regular credit cards and avoid any letters-->
-                                <input type="text" id="Credit" class="form-control form-gym" aria-label="credit card number"
-                                    name="creditCardNumber" placeholder="1111-2222-3333-4444" required pattern="[0-9]{16}">
+                                <input type="text" id="Credit" class="form-control form-gym"
+                                    aria-label="credit card number" name="creditCardNumber"
+                                    placeholder="1111-2222-3333-4444" required pattern="[0-9]{16}">
                             </div>
                         </div>
                         <div class="row basket-form align-items-center justify-content-center">
                             <div class="col-lg-4 col-md-4 col-sm-8" id="divExpiry">
                                 <label for="Expiry">Expiry Date:</label>
                                 <!-- pattern is used so user has to put a valid month and year-->
-                                <input type="text" id="Expiry" class="form-control form-gym"
-                                    aria-label="expiry date" name="expiryDate"
-                                    placeholder="MM/YYYY" required pattern="[0-12]{2}/[0-9]{4}">
+                                <input type="text" id="Expiry" class="form-control form-gym" aria-label="expiry date"
+                                    name="expiryDate" placeholder="MM/YYYY" required pattern="[0-12]{2}/[0-9]{4}">
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-8" id="divCVC">
                                 <label for="CVC">CVC/CVV:</label>
@@ -161,39 +161,55 @@
                                 <h3>ORDER CONFIRMATION</h3>
                             </div>
                         </div>
-                        <div class="row order-summary">
-                            <div class="col-12">
-                                <div class="row subtotal-price">
-                                    <div class="col-10">
-                                        <h3 class="order-summary-title">SUBTOTAL</h3>
-                                    </div>
-                                    <div class="col-2">
-                                        <h3>€90</h3>
-                                    </div>
+                        <div class="order-summary">
+                            <div class="row align-items-center d-flex justify-content-center confirmation-summary-card">
+                                <div class="col-10 d-flex align-items-center gap-3">
+                                    <img src="Images/sports-bra-3.avif" alt="sports bra">
+                                    <p class="text-start">PowerLift Zip Bra</p>
                                 </div>
-                                    <h3>COUPON CODE</h3>
-                                    <div class="row">
-                                        <div class="col-7">
-                                            <input type="text" class="form-control form-gym" placeholder="Enter Code"
-                                                aria-label="Enter Code">
-                                        </div>
-                                        <div class="col-5">
-                                            <button class="button-coupon">Get Code</button>
-                                        </div>
-                                    </div>
-                                <div class="row total-price">
-                                    <div class="col-10">
-                                        <h3 class="order-summary-title">TOTAL</h3>
-                                    </div>
-                                    <div class="col-2">
-                                        <h3>€90</h3>
-                                    </div>
+                                <div class="col-2 text-center">
+                                    <h3>x1</h3>
                                 </div>
-                                <!-- styling is used to get the button in the middle -->
-                                <button type="submit" class="button-checkout"
-                                    style="margin: 0 auto; display: block;">Pay Online</button>
                             </div>
                         </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12">
+                                <div class="row align-items-center d-flex justify-content-center confirmation-summary-card">
+                                    <div class="col-10 d-flex align-items-center gap-3">
+                                        <img src="Images/wheel-1.jpg" alt="ab roller">
+                                        <p class="text-start">CoreForm Ab Roller</p>
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <h3>x1</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12">
+                                <div class="row align-items-center d-flex justify-content-center confirmation-summary-card">
+                                    <div class="col-10 d-flex align-items-center gap-3">
+                                        <img src="Images/citru-1.jpg" alt="citruline">
+                                        <p class="text-start">Nitric Oxide Support</p>
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <h3>x1</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-card"></div>
+                        <div class="row total-price-card">
+                            <div class="col-10">
+                                <h3 class="order-summary-title">TOTAL</h3>
+                            </div>
+                            <div class="col-2">
+                                <h3>€90</h3>
+                            </div>
+                        </div>
+                        <!-- styling is used to get the button in the middle -->
+                        <button type="submit" class="button-checkout" style="margin: 0 auto; display: block;">Pay
+                            Online</button>
                     </div>
                 </div>
             </form>
