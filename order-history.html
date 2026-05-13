@@ -24,8 +24,7 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar">
                 <div class="offcanvas-header">
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
@@ -103,7 +102,7 @@
                 <!-- DESKTOP SIDEBAR what will be displayed for large screens -->
                 <div class="col-3 profile-categories-column d-none d-lg-block">
                     <a href="profile.html" class="profile-categories">DASHBOARD</a>
-                    <a href="orders.html" class="profile-categories" id="profile-selected">ORDERS</a>
+                    <a href="orders.html" class="profile-categories profile-selected">ORDERS</a>
                     <a href="sessions.html" class="profile-categories">SESSION PUNCH IN</a>
                     <a href="bookedclasses.html" class="profile-categories">CLASSES</a>
                     <a href="account.html" class="profile-categories">ACCOUNT DETAILS</a>
@@ -148,8 +147,8 @@
                                 <!-- Order number and order again button -->
                                 <div class="col-4 d-flex justify-content-end">
                                     <div class="order-again">
-                                        <h3>Order: #623455</h3>
-                                        <a href="checkout.html"><button class="button-default">Order Again</button></a>
+                                        <p>Order: #623455</p>
+                                        <a href="checkout.html" class="button-default">Order Again</a>
                                     </div>
                                 </div>
                             </div>
@@ -180,9 +179,9 @@
                                 </div>
                                 <!-- Order number and order again button -->
                                 <div class="col-4 d-flex justify-content-end">
-                                    <div class="div order-again">
-                                        <h3>Order: #654321</h3>
-                                        <a href="checkout.html"><button class="button-default">Order Again</button></a>
+                                    <div class="order-again">
+                                        <p>Order: #654321</p>
+                                        <a href="checkout.html" class="button-default">Order Again</a>
                                     </div>
                                 </div>
                             </div>
@@ -201,7 +200,7 @@
 
                     <div class="offcanvas-body">
                         <a href="profile.html" class="profile-categories">DASHBOARD</a>
-                        <a href="orders.html" class="profile-categories" id="profile-selected">ORDERS</a>
+                        <a href="orders.html" class="profile-categories profile-selected">ORDERS</a>
                         <a href="sessions.html" class="profile-categories">SESSION PUNCH IN</a>
                         <a href="bookedclasses.html" class="profile-categories">CLASSES</a>
                         <a href="account.html" class="profile-categories">ACCOUNT DETAILS</a>
@@ -262,11 +261,7 @@
 
                 <div class="row align-items-center footer-bottom-row">
                     <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
-                        <a href="contact.html">
-                            <button class="send-feedback-button">
-                                SEND FEEDBACK
-                            </button>
-                        </a>
+                        <a class="send-feedback-button" href="contact.html">SEND FEEDBACK</a>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
                         <a href="rules-safety.html" class="flex-box">

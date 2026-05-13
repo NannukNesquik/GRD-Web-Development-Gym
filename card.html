@@ -25,8 +25,7 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar">
                 <div class="offcanvas-header">
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
@@ -121,7 +120,7 @@
                     <div class="col-lg-8 col-md-12 col-sm-12">
                         <div class="row background-strip align-items-center">
                             <div class="col">
-                                <h3 style="color: #8ACE00; pointer-events: none;">hello</h3>
+                                <h2 class="hidden-text">hello</h2>
                             </div>
                         </div>
                         <div class="row basket-form align-items-center justify-content-center">
@@ -143,7 +142,7 @@
                             <div class="col-lg-4 col-md-4 col-sm-8" id="divCVC">
                                 <label for="CVC">CVC/CVV:</label>
                                 <!-- used a pattern to have only 3 numbers and avoid any letters -->
-                                <input type="CVC" id="street" class="form-control form-gym" name="CVC/CVV"
+                                <input type="text" id="CVC" class="form-control form-gym" name="CVC/CVV"
                                     aria-label="CVC/CVV" placeholder="123" required pattern="[0-9]{3}">
                             </div>
                         </div>
@@ -266,11 +265,7 @@
 
                 <div class="row align-items-center footer-bottom-row">
                     <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
-                        <a href="contact.html">
-                            <button class="send-feedback-button">
-                                SEND FEEDBACK
-                            </button>
-                        </a>
+                        <a class="send-feedback-button" href="contact.html">SEND FEEDBACK</a>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
                         <a href="rules-safety.html" class="flex-box">

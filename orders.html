@@ -24,8 +24,7 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar">
                 <div class="offcanvas-header">
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
@@ -101,7 +100,7 @@
                 <!-- DESKTOP SIDEBAR -->
                 <div class="col-3 profile-categories-column d-none d-lg-block">
                     <a href="profile.html" class="profile-categories">DASHBOARD</a>
-                    <a href="orders.html" class="profile-categories" id="profile-selected">ORDERS</a>
+                    <a href="orders.html" class="profile-categories profile-selected">ORDERS</a>
                     <a href="sessions.html" class="profile-categories">SESSION PUNCH IN</a>
                     <a href="bookedclasses.html" class="profile-categories">CLASSES</a>
                     <a href="account.html" class="profile-categories">ACCOUNT DETAILS</a>
@@ -122,7 +121,7 @@
                     </div>
                     <div class="row view-order-section">
                         <div class="col-lg-3 col-md-12 col-sm-12 order-number">
-                            <h3>Order: #123456</h3>
+                            <p>Order: #123456</p>
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 justify-content-center">
                             <div class="row">
@@ -135,8 +134,8 @@
                                             <p>PowerLift Zip Bra</p>
                                             <p>x1</p>
                                         </div>
-                                        <div class="col-3 text-center">
-                                            <h3>€42</h3>
+                                        <div class="col-3 text-center order-bold">
+                                            <p>€42</p>
                                         </div>
                                     </div>
                                 </div>
@@ -151,8 +150,8 @@
                                             <p>CoreForm Ab Roller</p>
                                             <p>x1</p>
                                         </div>
-                                        <div class="col-3 text-center">
-                                            <h3>€22</h3>
+                                        <div class="col-3 text-center order-bold">
+                                            <p>€22</p>
                                         </div>
                                     </div>
                                 </div>
@@ -167,18 +166,18 @@
                                             <p>Nitric Oxide Support</p>
                                             <p>x1</p>
                                         </div>
-                                        <div class="col-3 text-center">
-                                            <h3>€26</h3>
+                                        <div class="col-3 text-center order-bold">
+                                            <p>€26</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row background-strip-view-order">
+                            <div class="row background-strip-view-order order-bold-black">
                                 <div class="col-6">
-                                    <h3>ORDER SUMMARY</h3>
+                                    <p>ORDER SUMMARY</p>
                                 </div>
                                 <div class="col-6 text-end">
-                                    <h3>€90.00</h3>
+                                    <p>€90.00</p>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +195,7 @@
 
                     <div class="offcanvas-body">
                         <a href="profile.html" class="profile-categories">DASHBOARD</a>
-                        <a href="orders.html" class="profile-categories" id="profile-selected">ORDERS</a>
+                        <a href="orders.html" class="profile-categories profile-selected">ORDERS</a>
                         <a href="sessions.html" class="profile-categories">SESSION PUNCH IN</a>
                         <a href="bookedclasses.html" class="profile-categories">CLASSES</a>
                         <a href="account.html" class="profile-categories">ACCOUNT DETAILS</a>
@@ -257,11 +256,7 @@
 
                 <div class="row align-items-center footer-bottom-row">
                     <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
-                        <a href="contact.html">
-                            <button class="send-feedback-button">
-                                SEND FEEDBACK
-                            </button>
-                        </a>
+                        <a class="send-feedback-button" href="contact.html">SEND FEEDBACK</a>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
                         <a href="rules-safety.html" class="flex-box">
