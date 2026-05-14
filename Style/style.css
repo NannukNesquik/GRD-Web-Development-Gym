@@ -14,7 +14,7 @@ body {
 p,
 .profile-categories,
 caption,
-.rules-safety {
+.rules-safety, .calendar-day, .calendar-date {
     color: white;
     font-size: 24px;
     font-family: 'roboto';
@@ -445,8 +445,11 @@ textarea {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 3;
+    /* z-index is used to layer my hero image, banner and apply now button */
+    /* z-index 1 to be the bottom layer but still over h1 text "6 months free gym */
+    z-index: 1;
     overflow: hidden;
+    pointer-events: none;
 }
 
 .hero-page h1 {
@@ -457,9 +460,11 @@ textarea {
     margin-bottom: 40px;
 }
 
-.hero-image-box {
+.hero-image-box button{
     position: relative;
-    z-index: 2;
+    /* z-index is used to layer my hero image, banner and apply now button */
+    /* z-index 3 to overlap image and banner */
+    z-index: 3;
 }
 
 .hero-image img {
@@ -474,7 +479,8 @@ textarea {
 /* Banner */
 /* z-index to have the banner overlap over the hero image */
 .banner-layer {
-    z-index: 3;
+    /* z-index is used to layer my hero image, banner and apply now button */
+    z-index: 2;
     /* to stop the cursor from changing to a pointer when hovering over the text */
     pointer-events: none;
 }
@@ -840,12 +846,16 @@ textarea {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: -2px;
+    /* display block is used to have the span text have its own line */
+    display: block;
 }
 
 .calendar-date {
     font-size: 64px;
     font-weight: bold;
     margin-bottom: 12px;
+    /* display block is used to have the span text have its own line */
+    display: block;
 }
 
 .class-indicator {
