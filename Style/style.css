@@ -14,34 +14,39 @@ body {
 p,
 .profile-categories,
 caption,
-.rules-safety, .calendar-day, .calendar-date {
+.rules-safety,
+.calendar-day,
+.calendar-date {
     color: white;
     font-size: 24px;
-    font-family: 'roboto';
+    font-family: "Roboto", Arial, sans-serif;
     line-height: 1.3;
 }
 
-h1 {
+h1,
+.nav-head {
     color: white;
-    font-family: 'bebas neue';
+    font-family: "Bebas Neue", Arial, sans-serif;
     font-size: 200px;
 }
 
 /* to avoid extra lines of css I added classes that will use the same h/p styling accordingly */
 h2,
 .notselected-cat,
+.imitating-h2,
 .selected-cat,
 .cat-selected,
 .cat-notselected,
 .profile-offcanvas a {
     color: white;
     font-size: 64px;
-    font-family: 'oswald';
+    font-family: "Oswald", Arial, sans-serif;
     font-weight: bold;
 }
 
 h3,
-label,
+label, .view-all,
+.imitiating-h3,
 .button-default,
 .button-membership,
 .send-feedback-button,
@@ -50,15 +55,20 @@ label,
 .order-again,
 .order-number,
 .order-bold,
-.order-bold-black, .focus-area,
+.order-bold-black,
+.focus-area,
 .button-checkout,
 .button-default-disabled,
 .profile-offcanvas a,
-.profile-menu-btn, .price,
-.checkout-heading-text, .card-title, .rules-safety-title, .safety-precautions{
+.profile-menu-btn,
+.price,
+.checkout-heading-text,
+.card-title,
+.rules-safety-title,
+.safety-precautions {
     color: white;
     font-size: 24px;
-    font-family: 'roboto';
+    font-family: "Roboto", Arial, sans-serif;
     font-weight: bold;
 }
 
@@ -79,7 +89,7 @@ a {
     padding-bottom: 140px;
 }
 
-.page-margins-pt{
+.page-margins-pt {
     padding-bottom: 140px;
     padding-top: 20px;
 }
@@ -454,13 +464,13 @@ textarea {
 
 .hero-page h1 {
     font-size: 200px;
-    font-family: 'Bebas Neue';
+    font-family: "Bebas Neue", Arial, sans-serif;
     color: white;
     line-height: 1;
     margin-bottom: 40px;
 }
 
-.hero-image-box button{
+.hero-image-box button {
     position: relative;
     /* z-index is used to layer my hero image, banner and apply now button */
     /* z-index 3 to overlap image and banner */
@@ -666,7 +676,7 @@ textarea {
 /* about us page ends */
 
 /* login */
-.log-in h2 {
+.log-in-heading {
     margin-bottom: 40px;
 }
 
@@ -1015,11 +1025,11 @@ textarea {
     margin-bottom: 140px;
 }
 
-.order-bold-black p{
+.order-bold-black p {
     color: #161715;
 }
 
-.profile-content h2 {
+.profile-content h1 {
     margin-bottom: 40px;
 }
 
@@ -1151,7 +1161,7 @@ input {
     color: white;
 }
 
-.category-title h3:hover {
+.category-title a:hover {
     text-decoration: none;
     color: #8ACE00;
 }
@@ -1312,7 +1322,7 @@ input {
     margin-bottom: 28px;
 }
 
-.background-strip-view-order{
+.background-strip-view-order {
     background-color: #8ACE00;
     border-radius: 15px;
     padding: 20px 20px 8px 20px;
@@ -1446,7 +1456,7 @@ input {
     color: #8ACE00;
     pointer-events: none;
     font-size: 24px;
-    font-family: 'roboto';
+    font-family: "Roboto", Arial, sans-serif;
     font-weight: bold;
 }
 
@@ -1483,7 +1493,7 @@ input {
 /* view ongoing orders in profile end */
 
 /* product focus */
-.product-line h3 {
+.product-line h2 {
     font-size: 12px;
 }
 
