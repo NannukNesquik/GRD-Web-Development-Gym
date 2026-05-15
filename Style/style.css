@@ -286,6 +286,7 @@ a .button-default:hover,
 .navbar-icons-right {
     width: 50px;
     height: 50px;
+    margin-top: 8px;
 }
 
 /* sub nav bar*/
