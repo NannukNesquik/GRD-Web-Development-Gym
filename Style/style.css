@@ -885,7 +885,7 @@ textarea {
     color: #161715;
 }
 
-.nav-pills .nav-link.active p {
+.nav-pills .nav-link.active span {
     color: #161715;
 }
 
